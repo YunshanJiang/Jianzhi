@@ -1,0 +1,1 @@
+擦除当前SpriteRender上显示Sprite图片, 显示领一张图片
