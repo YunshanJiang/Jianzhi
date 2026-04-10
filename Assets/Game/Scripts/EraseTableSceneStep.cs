@@ -28,7 +28,8 @@ namespace Game
         protected override void OnStepReset()
         {
             base.OnStepReset();
-            Run_m_onStepEnd();
+            //Run_m_onStepEnd();
+            StepEnd();
             m_eraseRevealController.ResetMask();
         }
 

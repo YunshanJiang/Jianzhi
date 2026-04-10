@@ -360,9 +360,14 @@ MonoBehaviour:
   sceneZoneTypeId: 0
   m_stepMessage: "\u5C06\u7532\u578B\u6D41\u611F\u6838\u9178\u68C0\u6D4B\u8BD5\u5242\u653E\u7F6E\u5728\u5DE5\u4F5C\u53F0"
   m_stepMessageColor: {r: 1, g: 1, b: 1, a: 1}
+  m_beforeStepStartActiveSet: []
   m_stepStartActiveSet: []
+  m_stepEndActiveSet: []
   m_stepEndInactive: 1
   m_onStepStart:
+    m_PersistentCalls:
+      m_Calls: []
+  m_onStepReset:
     m_PersistentCalls:
       m_Calls: []
   m_onStepEnd:
@@ -609,7 +614,9 @@ MonoBehaviour:
   sceneZoneTypeId: 0
   m_stepMessage: 
   m_stepMessageColor: {r: 1, g: 1, b: 1, a: 1}
+  m_beforeStepStartActiveSet: []
   m_stepStartActiveSet: []
+  m_stepEndActiveSet: []
   m_stepEndInactive: 1
   m_onStepStart:
     m_PersistentCalls:
@@ -638,6 +645,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  m_onStepReset:
+    m_PersistentCalls:
+      m_Calls: []
   m_onStepEnd:
     m_PersistentCalls:
       m_Calls:
@@ -779,9 +789,14 @@ MonoBehaviour:
   sceneZoneTypeId: 0
   m_stepMessage: 
   m_stepMessageColor: {r: 1, g: 1, b: 1, a: 1}
+  m_beforeStepStartActiveSet: []
   m_stepStartActiveSet: []
+  m_stepEndActiveSet: []
   m_stepEndInactive: 1
   m_onStepStart:
+    m_PersistentCalls:
+      m_Calls: []
+  m_onStepReset:
     m_PersistentCalls:
       m_Calls: []
   m_onStepEnd:
@@ -1076,9 +1091,14 @@ MonoBehaviour:
   sceneZoneTypeId: 0
   m_stepMessage: 
   m_stepMessageColor: {r: 1, g: 1, b: 1, a: 1}
+  m_beforeStepStartActiveSet: []
   m_stepStartActiveSet: []
+  m_stepEndActiveSet: []
   m_stepEndInactive: 1
   m_onStepStart:
+    m_PersistentCalls:
+      m_Calls: []
+  m_onStepReset:
     m_PersistentCalls:
       m_Calls: []
   m_onStepEnd:
@@ -1235,9 +1255,14 @@ MonoBehaviour:
   sceneZoneTypeId: 0
   m_stepMessage: "\u8BF7\u524D\u5F80\u5E76\u542F\u52A8\u632F\u8361\u5668"
   m_stepMessageColor: {r: 1, g: 1, b: 1, a: 1}
+  m_beforeStepStartActiveSet: []
   m_stepStartActiveSet: []
+  m_stepEndActiveSet: []
   m_stepEndInactive: 1
   m_onStepStart:
+    m_PersistentCalls:
+      m_Calls: []
+  m_onStepReset:
     m_PersistentCalls:
       m_Calls: []
   m_onStepEnd:
@@ -1360,9 +1385,14 @@ MonoBehaviour:
   sceneZoneTypeId: 0
   m_stepMessage: "\u79BB\u5FC3\u673A\u5904\u74065\u79D2"
   m_stepMessageColor: {r: 1, g: 1, b: 1, a: 1}
+  m_beforeStepStartActiveSet: []
   m_stepStartActiveSet: []
+  m_stepEndActiveSet: []
   m_stepEndInactive: 1
   m_onStepStart:
+    m_PersistentCalls:
+      m_Calls: []
+  m_onStepReset:
     m_PersistentCalls:
       m_Calls: []
   m_onStepEnd:
@@ -1829,7 +1859,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &198124139
 Transform:
   m_ObjectHideFlags: 0
@@ -2128,9 +2158,14 @@ MonoBehaviour:
   sceneZoneTypeId: 0
   m_stepMessage: "\u4F7F\u7528\u9152\u7CBE\u55B7\u96FE\u5668\u55B7\u6D12\u9152\u7CBE"
   m_stepMessageColor: {r: 1, g: 1, b: 1, a: 1}
+  m_beforeStepStartActiveSet: []
   m_stepStartActiveSet: []
+  m_stepEndActiveSet: []
   m_stepEndInactive: 1
   m_onStepStart:
+    m_PersistentCalls:
+      m_Calls: []
+  m_onStepReset:
     m_PersistentCalls:
       m_Calls: []
   m_onStepEnd:
@@ -2335,8 +2370,10 @@ MonoBehaviour:
   sceneZoneTypeId: 0
   m_stepMessage: "\u55B7\u6D12\u9152\u7CBE"
   m_stepMessageColor: {r: 1, g: 1, b: 1, a: 1}
+  m_beforeStepStartActiveSet: []
   m_stepStartActiveSet:
   - {fileID: 5720031}
+  m_stepEndActiveSet: []
   m_stepEndInactive: 1
   m_onStepStart:
     m_PersistentCalls:
@@ -2353,6 +2390,9 @@ MonoBehaviour:
           m_StringArgument: "\u5DE5\u4F5C\u53F0\u6D88\u6BD2"
           m_BoolArgument: 0
         m_CallState: 2
+  m_onStepReset:
+    m_PersistentCalls:
+      m_Calls: []
   m_onStepEnd:
     m_PersistentCalls:
       m_Calls:
@@ -2455,9 +2495,18 @@ MonoBehaviour:
   sceneZoneTypeId: 0
   m_stepMessage: "\u8BF7\u524D\u5F80\u51B0\u7BB1\u53D6\u51FA\u7532\u578B\u6D41\u611F\u6838\u9178\u68C0\u6D4B\u8BD5\u5242"
   m_stepMessageColor: {r: 1, g: 1, b: 1, a: 1}
+  m_beforeStepStartActiveSet:
+  - Target: {fileID: 2102713226}
+    Active: 0
   m_stepStartActiveSet: []
+  m_stepEndActiveSet:
+  - Target: {fileID: 2102713226}
+    Active: 0
   m_stepEndInactive: 1
   m_onStepStart:
+    m_PersistentCalls:
+      m_Calls: []
+  m_onStepReset:
     m_PersistentCalls:
       m_Calls: []
   m_onStepEnd:
@@ -2938,9 +2987,14 @@ MonoBehaviour:
   sceneZoneTypeId: 0
   m_stepMessage: "\u5C06\u8BD5\u5242\u653E\u5230\u79BB\u5FC3\u673A"
   m_stepMessageColor: {r: 1, g: 1, b: 1, a: 1}
+  m_beforeStepStartActiveSet: []
   m_stepStartActiveSet: []
+  m_stepEndActiveSet: []
   m_stepEndInactive: 1
   m_onStepStart:
+    m_PersistentCalls:
+      m_Calls: []
+  m_onStepReset:
     m_PersistentCalls:
       m_Calls: []
   m_onStepEnd:
@@ -3140,9 +3194,14 @@ MonoBehaviour:
   sceneZoneTypeId: 0
   m_stepMessage: "\u62FF\u8D77\u8BD5\u5242"
   m_stepMessageColor: {r: 1, g: 1, b: 1, a: 1}
+  m_beforeStepStartActiveSet: []
   m_stepStartActiveSet: []
+  m_stepEndActiveSet: []
   m_stepEndInactive: 1
   m_onStepStart:
+    m_PersistentCalls:
+      m_Calls: []
+  m_onStepReset:
     m_PersistentCalls:
       m_Calls: []
   m_onStepEnd:
@@ -3431,9 +3490,14 @@ MonoBehaviour:
   sceneZoneTypeId: 0
   m_stepMessage: "\u62FF\u8D77\u5269\u4F59\u7684\u7532\u578B\u6D41\u611F\u6838\u9178\u68C0\u6D4B\u8BD5\u5242\u653E\u5165\u51B0\u7BB1"
   m_stepMessageColor: {r: 1, g: 1, b: 1, a: 1}
+  m_beforeStepStartActiveSet: []
   m_stepStartActiveSet: []
+  m_stepEndActiveSet: []
   m_stepEndInactive: 1
   m_onStepStart:
+    m_PersistentCalls:
+      m_Calls: []
+  m_onStepReset:
     m_PersistentCalls:
       m_Calls: []
   m_onStepEnd:
@@ -3836,9 +3900,14 @@ MonoBehaviour:
   sceneZoneTypeId: 0
   m_stepMessage: "\u542F\u52A8\u79BB\u5FC3\u673A"
   m_stepMessageColor: {r: 1, g: 1, b: 1, a: 1}
+  m_beforeStepStartActiveSet: []
   m_stepStartActiveSet: []
+  m_stepEndActiveSet: []
   m_stepEndInactive: 1
   m_onStepStart:
+    m_PersistentCalls:
+      m_Calls: []
+  m_onStepReset:
     m_PersistentCalls:
       m_Calls: []
   m_onStepEnd:
@@ -4048,9 +4117,14 @@ MonoBehaviour:
   sceneZoneTypeId: 0
   m_stepMessage: 
   m_stepMessageColor: {r: 1, g: 1, b: 1, a: 1}
+  m_beforeStepStartActiveSet: []
   m_stepStartActiveSet: []
+  m_stepEndActiveSet: []
   m_stepEndInactive: 1
   m_onStepStart:
+    m_PersistentCalls:
+      m_Calls: []
+  m_onStepReset:
     m_PersistentCalls:
       m_Calls: []
   m_onStepEnd:
@@ -4170,12 +4244,17 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1456152616003882327, guid: bd0b32aa6b4ee11489ef757e575972a3, type: 3}
   m_PrefabInstance: {fileID: 402656016}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 402656019}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1b3a2db4878c49aaafee6b8e7a23573c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &402656019 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 89402161834343762, guid: bd0b32aa6b4ee11489ef757e575972a3, type: 3}
+  m_PrefabInstance: {fileID: 402656016}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &403759224 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3725185041424722665, guid: 0d3f1fa058bb05048a353a790ef7b9ff, type: 3}
@@ -4405,9 +4484,14 @@ MonoBehaviour:
   sceneZoneTypeId: 1
   m_stepMessage: 
   m_stepMessageColor: {r: 1, g: 1, b: 1, a: 1}
+  m_beforeStepStartActiveSet: []
   m_stepStartActiveSet: []
+  m_stepEndActiveSet: []
   m_stepEndInactive: 1
   m_onStepStart:
+    m_PersistentCalls:
+      m_Calls: []
+  m_onStepReset:
     m_PersistentCalls:
       m_Calls: []
   m_onStepEnd:
@@ -4739,10 +4823,16 @@ MonoBehaviour:
   sceneZoneTypeId: 1
   m_stepMessage: 
   m_stepMessageColor: {r: 1, g: 1, b: 1, a: 1}
+  m_beforeStepStartActiveSet: []
   m_stepStartActiveSet:
   - {fileID: 2069670892}
+  - {fileID: 1504553673}
+  m_stepEndActiveSet: []
   m_stepEndInactive: 1
   m_onStepStart:
+    m_PersistentCalls:
+      m_Calls: []
+  m_onStepReset:
     m_PersistentCalls:
       m_Calls: []
   m_onStepEnd:
@@ -4852,9 +4942,14 @@ MonoBehaviour:
   sceneZoneTypeId: 1
   m_stepMessage: 
   m_stepMessageColor: {r: 1, g: 1, b: 1, a: 1}
+  m_beforeStepStartActiveSet: []
   m_stepStartActiveSet: []
+  m_stepEndActiveSet: []
   m_stepEndInactive: 1
   m_onStepStart:
+    m_PersistentCalls:
+      m_Calls: []
+  m_onStepReset:
     m_PersistentCalls:
       m_Calls: []
   m_onStepEnd:
@@ -5053,9 +5148,14 @@ MonoBehaviour:
   sceneZoneTypeId: 0
   m_stepMessage: "\u79BB\u5F00\u5B9E\u9A8C\u5BA4"
   m_stepMessageColor: {r: 1, g: 1, b: 1, a: 1}
+  m_beforeStepStartActiveSet: []
   m_stepStartActiveSet: []
+  m_stepEndActiveSet: []
   m_stepEndInactive: 1
   m_onStepStart:
+    m_PersistentCalls:
+      m_Calls: []
+  m_onStepReset:
     m_PersistentCalls:
       m_Calls: []
   m_onStepEnd:
@@ -5126,7 +5226,9 @@ MonoBehaviour:
   sceneZoneTypeId: 0
   m_stepMessage: 
   m_stepMessageColor: {r: 1, g: 1, b: 1, a: 1}
+  m_beforeStepStartActiveSet: []
   m_stepStartActiveSet: []
+  m_stepEndActiveSet: []
   m_stepEndInactive: 1
   m_onStepStart:
     m_PersistentCalls:
@@ -5155,6 +5257,9 @@ MonoBehaviour:
           m_StringArgument: "\u914D\u5236"
           m_BoolArgument: 0
         m_CallState: 2
+  m_onStepReset:
+    m_PersistentCalls:
+      m_Calls: []
   m_onStepEnd:
     m_PersistentCalls:
       m_Calls:
@@ -5488,9 +5593,14 @@ MonoBehaviour:
   sceneZoneTypeId: 0
   m_stepMessage: "\u8FDB\u5165\u5B9E\u9A8C\u5BA4"
   m_stepMessageColor: {r: 1, g: 1, b: 1, a: 1}
+  m_beforeStepStartActiveSet: []
   m_stepStartActiveSet: []
+  m_stepEndActiveSet: []
   m_stepEndInactive: 1
   m_onStepStart:
+    m_PersistentCalls:
+      m_Calls: []
+  m_onStepReset:
     m_PersistentCalls:
       m_Calls: []
   m_onStepEnd:
@@ -5622,12 +5732,17 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1456152616003882327, guid: bd0b32aa6b4ee11489ef757e575972a3, type: 3}
   m_PrefabInstance: {fileID: 563012772}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 563012775}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1b3a2db4878c49aaafee6b8e7a23573c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &563012775 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 89402161834343762, guid: bd0b32aa6b4ee11489ef757e575972a3, type: 3}
+  m_PrefabInstance: {fileID: 563012772}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &571247870
 GameObject:
   m_ObjectHideFlags: 0
@@ -6797,12 +6912,17 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1456152616003882327, guid: bd0b32aa6b4ee11489ef757e575972a3, type: 3}
   m_PrefabInstance: {fileID: 708528916}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 708528919}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1b3a2db4878c49aaafee6b8e7a23573c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &708528919 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 89402161834343762, guid: bd0b32aa6b4ee11489ef757e575972a3, type: 3}
+  m_PrefabInstance: {fileID: 708528916}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &716747148
 GameObject:
   m_ObjectHideFlags: 0
@@ -7359,7 +7479,9 @@ MonoBehaviour:
   sceneZoneTypeId: 0
   m_stepMessage: 
   m_stepMessageColor: {r: 1, g: 1, b: 1, a: 1}
+  m_beforeStepStartActiveSet: []
   m_stepStartActiveSet: []
+  m_stepEndActiveSet: []
   m_stepEndInactive: 1
   m_onStepStart:
     m_PersistentCalls:
@@ -7388,6 +7510,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  m_onStepReset:
+    m_PersistentCalls:
+      m_Calls: []
   m_onStepEnd:
     m_PersistentCalls:
       m_Calls:
@@ -7467,9 +7592,14 @@ MonoBehaviour:
   sceneZoneTypeId: 0
   m_stepMessage: "\u8BF7\u524D\u5F80\u5DE5\u4F5C\u53F0\u914D\u5236\u8BD5\u5242"
   m_stepMessageColor: {r: 1, g: 1, b: 1, a: 1}
+  m_beforeStepStartActiveSet: []
   m_stepStartActiveSet: []
+  m_stepEndActiveSet: []
   m_stepEndInactive: 1
   m_onStepStart:
+    m_PersistentCalls:
+      m_Calls: []
+  m_onStepReset:
     m_PersistentCalls:
       m_Calls: []
   m_onStepEnd:
@@ -7492,7 +7622,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 89402161834343762, guid: bd0b32aa6b4ee11489ef757e575972a3, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1456152616003882327, guid: bd0b32aa6b4ee11489ef757e575972a3, type: 3}
       propertyPath: m_content
@@ -7520,7 +7650,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8187721790818886806, guid: bd0b32aa6b4ee11489ef757e575972a3, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.292
+      value: 0.005
       objectReference: {fileID: 0}
     - target: {fileID: 8187721790818886806, guid: bd0b32aa6b4ee11489ef757e575972a3, type: 3}
       propertyPath: m_LocalRotation.w
@@ -7570,6 +7700,11 @@ PrefabInstance:
 --- !u!4 &788301071 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8187721790818886806, guid: bd0b32aa6b4ee11489ef757e575972a3, type: 3}
+  m_PrefabInstance: {fileID: 788301070}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &788301072 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 89402161834343762, guid: bd0b32aa6b4ee11489ef757e575972a3, type: 3}
   m_PrefabInstance: {fileID: 788301070}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &802820338 stripped
@@ -9157,9 +9292,14 @@ MonoBehaviour:
   sceneZoneTypeId: 0
   m_stepMessage: 
   m_stepMessageColor: {r: 1, g: 1, b: 1, a: 1}
+  m_beforeStepStartActiveSet: []
   m_stepStartActiveSet: []
+  m_stepEndActiveSet: []
   m_stepEndInactive: 1
   m_onStepStart:
+    m_PersistentCalls:
+      m_Calls: []
+  m_onStepReset:
     m_PersistentCalls:
       m_Calls: []
   m_onStepEnd:
@@ -9237,9 +9377,14 @@ MonoBehaviour:
   sceneZoneTypeId: 0
   m_stepMessage: 
   m_stepMessageColor: {r: 1, g: 1, b: 1, a: 1}
+  m_beforeStepStartActiveSet: []
   m_stepStartActiveSet: []
+  m_stepEndActiveSet: []
   m_stepEndInactive: 1
   m_onStepStart:
+    m_PersistentCalls:
+      m_Calls: []
+  m_onStepReset:
     m_PersistentCalls:
       m_Calls: []
   m_onStepEnd:
@@ -9415,9 +9560,14 @@ MonoBehaviour:
   sceneZoneTypeId: 1
   m_stepMessage: 
   m_stepMessageColor: {r: 1, g: 1, b: 1, a: 1}
+  m_beforeStepStartActiveSet: []
   m_stepStartActiveSet: []
+  m_stepEndActiveSet: []
   m_stepEndInactive: 1
   m_onStepStart:
+    m_PersistentCalls:
+      m_Calls: []
+  m_onStepReset:
     m_PersistentCalls:
       m_Calls: []
   m_onStepEnd:
@@ -9641,12 +9791,17 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1456152616003882327, guid: bd0b32aa6b4ee11489ef757e575972a3, type: 3}
   m_PrefabInstance: {fileID: 1084517129}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1084517132}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1b3a2db4878c49aaafee6b8e7a23573c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1084517132 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 89402161834343762, guid: bd0b32aa6b4ee11489ef757e575972a3, type: 3}
+  m_PrefabInstance: {fileID: 1084517129}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1095140994
 GameObject:
   m_ObjectHideFlags: 0
@@ -10019,9 +10174,14 @@ MonoBehaviour:
   sceneZoneTypeId: 0
   m_stepMessage: "\u62FF\u8D77\u7532\u578B\u6D41\u611F\u6838\u9178\u68C0\u6D4B\u8BD5\u5242"
   m_stepMessageColor: {r: 1, g: 1, b: 1, a: 1}
+  m_beforeStepStartActiveSet: []
   m_stepStartActiveSet: []
+  m_stepEndActiveSet: []
   m_stepEndInactive: 1
   m_onStepStart:
+    m_PersistentCalls:
+      m_Calls: []
+  m_onStepReset:
     m_PersistentCalls:
       m_Calls: []
   m_onStepEnd:
@@ -10116,9 +10276,14 @@ MonoBehaviour:
   sceneZoneTypeId: 0
   m_stepMessage: "\u4F7F\u7528\u64E6\u62ED\u5E03\u64E6\u62ED\u5DE5\u4F5C\u53F0"
   m_stepMessageColor: {r: 1, g: 1, b: 1, a: 1}
+  m_beforeStepStartActiveSet: []
   m_stepStartActiveSet: []
+  m_stepEndActiveSet: []
   m_stepEndInactive: 1
   m_onStepStart:
+    m_PersistentCalls:
+      m_Calls: []
+  m_onStepReset:
     m_PersistentCalls:
       m_Calls: []
   m_onStepEnd:
@@ -10621,7 +10786,9 @@ MonoBehaviour:
   sceneZoneTypeId: 0
   m_stepMessage: 
   m_stepMessageColor: {r: 1, g: 1, b: 1, a: 1}
+  m_beforeStepStartActiveSet: []
   m_stepStartActiveSet: []
+  m_stepEndActiveSet: []
   m_stepEndInactive: 1
   m_onStepStart:
     m_PersistentCalls:
@@ -10650,6 +10817,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  m_onStepReset:
+    m_PersistentCalls:
+      m_Calls: []
   m_onStepEnd:
     m_PersistentCalls:
       m_Calls:
@@ -10729,9 +10899,14 @@ MonoBehaviour:
   sceneZoneTypeId: 0
   m_stepMessage: "\u62FF\u8D77\u8BD5\u5242"
   m_stepMessageColor: {r: 1, g: 1, b: 1, a: 1}
+  m_beforeStepStartActiveSet: []
   m_stepStartActiveSet: []
+  m_stepEndActiveSet: []
   m_stepEndInactive: 1
   m_onStepStart:
+    m_PersistentCalls:
+      m_Calls: []
+  m_onStepReset:
     m_PersistentCalls:
       m_Calls: []
   m_onStepEnd:
@@ -10918,9 +11093,14 @@ MonoBehaviour:
   sceneZoneTypeId: 0
   m_stepMessage: 
   m_stepMessageColor: {r: 1, g: 1, b: 1, a: 1}
+  m_beforeStepStartActiveSet: []
   m_stepStartActiveSet: []
+  m_stepEndActiveSet: []
   m_stepEndInactive: 1
   m_onStepStart:
+    m_PersistentCalls:
+      m_Calls: []
+  m_onStepReset:
     m_PersistentCalls:
       m_Calls: []
   m_onStepEnd:
@@ -11220,8 +11400,10 @@ MonoBehaviour:
   sceneZoneTypeId: 0
   m_stepMessage: "\u632F\u8361\u5668\u5904\u74065\u79D2"
   m_stepMessageColor: {r: 1, g: 1, b: 1, a: 1}
+  m_beforeStepStartActiveSet: []
   m_stepStartActiveSet:
   - {fileID: 959277060}
+  m_stepEndActiveSet: []
   m_stepEndInactive: 1
   m_onStepStart:
     m_PersistentCalls:
@@ -11250,6 +11432,9 @@ MonoBehaviour:
           m_StringArgument: "\u632F\u8361\u5668"
           m_BoolArgument: 0
         m_CallState: 2
+  m_onStepReset:
+    m_PersistentCalls:
+      m_Calls: []
   m_onStepEnd:
     m_PersistentCalls:
       m_Calls:
@@ -11350,9 +11535,14 @@ MonoBehaviour:
   sceneZoneTypeId: 0
   m_stepMessage: "\u5173\u95ED\u4F20\u9012\u7A97\u7684\u95E8"
   m_stepMessageColor: {r: 1, g: 1, b: 1, a: 1}
+  m_beforeStepStartActiveSet: []
   m_stepStartActiveSet: []
+  m_stepEndActiveSet: []
   m_stepEndInactive: 1
   m_onStepStart:
+    m_PersistentCalls:
+      m_Calls: []
+  m_onStepReset:
     m_PersistentCalls:
       m_Calls: []
   m_onStepEnd:
@@ -11368,6 +11558,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: "\u573A\u666F1-\u4F20\u9001\u533A\u5173\u95E8"
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 788301072}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
   m_interactive: {fileID: 1891614643}
@@ -11408,9 +11610,14 @@ MonoBehaviour:
   sceneZoneTypeId: 0
   m_stepMessage: "\u79BB\u5FC3\u673A\u5904\u74065\u79D2"
   m_stepMessageColor: {r: 1, g: 1, b: 1, a: 1}
+  m_beforeStepStartActiveSet: []
   m_stepStartActiveSet: []
+  m_stepEndActiveSet: []
   m_stepEndInactive: 1
   m_onStepStart:
+    m_PersistentCalls:
+      m_Calls: []
+  m_onStepReset:
     m_PersistentCalls:
       m_Calls: []
   m_onStepEnd:
@@ -11876,9 +12083,30 @@ MonoBehaviour:
   sceneZoneTypeId: 1
   m_stepMessage: 
   m_stepMessageColor: {r: 1, g: 1, b: 1, a: 1}
+  m_beforeStepStartActiveSet:
+  - Target: {fileID: 2119406573}
+    Active: 1
+  - Target: {fileID: 716857386}
+    Active: 0
+  - Target: {fileID: 1300088891}
+    Active: 1
+  - Target: {fileID: 788301072}
+    Active: 0
   m_stepStartActiveSet: []
+  m_stepEndActiveSet:
+  - Target: {fileID: 2119406573}
+    Active: 0
+  - Target: {fileID: 716857386}
+    Active: 1
+  - Target: {fileID: 1300088891}
+    Active: 0
+  - Target: {fileID: 788301072}
+    Active: 0
   m_stepEndInactive: 1
   m_onStepStart:
+    m_PersistentCalls:
+      m_Calls: []
+  m_onStepReset:
     m_PersistentCalls:
       m_Calls: []
   m_onStepEnd:
@@ -12342,8 +12570,10 @@ MonoBehaviour:
   sceneZoneTypeId: 0
   m_stepMessage: "\u632F\u8361\u5668\u5904\u740610\u79D2"
   m_stepMessageColor: {r: 1, g: 1, b: 1, a: 1}
+  m_beforeStepStartActiveSet: []
   m_stepStartActiveSet:
   - {fileID: 1514027965}
+  m_stepEndActiveSet: []
   m_stepEndInactive: 1
   m_onStepStart:
     m_PersistentCalls:
@@ -12372,6 +12602,9 @@ MonoBehaviour:
           m_StringArgument: "\u632F\u8361\u5668"
           m_BoolArgument: 0
         m_CallState: 2
+  m_onStepReset:
+    m_PersistentCalls:
+      m_Calls: []
   m_onStepEnd:
     m_PersistentCalls:
       m_Calls:
@@ -12632,7 +12865,9 @@ MonoBehaviour:
   sceneZoneTypeId: 0
   m_stepMessage: 
   m_stepMessageColor: {r: 1, g: 1, b: 1, a: 1}
+  m_beforeStepStartActiveSet: []
   m_stepStartActiveSet: []
+  m_stepEndActiveSet: []
   m_stepEndInactive: 1
   m_onStepStart:
     m_PersistentCalls:
@@ -12661,6 +12896,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  m_onStepReset:
+    m_PersistentCalls:
+      m_Calls: []
   m_onStepEnd:
     m_PersistentCalls:
       m_Calls: []
@@ -12738,9 +12976,14 @@ MonoBehaviour:
   sceneZoneTypeId: 0
   m_stepMessage: 
   m_stepMessageColor: {r: 1, g: 1, b: 1, a: 1}
+  m_beforeStepStartActiveSet: []
   m_stepStartActiveSet: []
+  m_stepEndActiveSet: []
   m_stepEndInactive: 1
   m_onStepStart:
+    m_PersistentCalls:
+      m_Calls: []
+  m_onStepReset:
     m_PersistentCalls:
       m_Calls: []
   m_onStepEnd:
@@ -13046,9 +13289,14 @@ MonoBehaviour:
   sceneZoneTypeId: 0
   m_stepMessage: "\u6253\u5F00\u4F20\u9012\u533A\u7684\u95E8"
   m_stepMessageColor: {r: 1, g: 1, b: 1, a: 1}
+  m_beforeStepStartActiveSet: []
   m_stepStartActiveSet: []
+  m_stepEndActiveSet: []
   m_stepEndInactive: 1
   m_onStepStart:
+    m_PersistentCalls:
+      m_Calls: []
+  m_onStepReset:
     m_PersistentCalls:
       m_Calls: []
   m_onStepEnd:
@@ -13119,9 +13367,14 @@ MonoBehaviour:
   sceneZoneTypeId: 0
   m_stepMessage: "\u5C06\u8BD5\u5242\u653E\u5165\u51B0\u7BB1"
   m_stepMessageColor: {r: 1, g: 1, b: 1, a: 1}
+  m_beforeStepStartActiveSet: []
   m_stepStartActiveSet: []
+  m_stepEndActiveSet: []
   m_stepEndInactive: 1
   m_onStepStart:
+    m_PersistentCalls:
+      m_Calls: []
+  m_onStepReset:
     m_PersistentCalls:
       m_Calls: []
   m_onStepEnd:
@@ -14026,9 +14279,14 @@ MonoBehaviour:
   sceneZoneTypeId: 0
   m_stepMessage: "\u8BF7\u524D\u5F80\u8863\u67DC\u7A7F\u9632\u62A4\u670D"
   m_stepMessageColor: {r: 1, g: 1, b: 1, a: 1}
+  m_beforeStepStartActiveSet: []
   m_stepStartActiveSet: []
+  m_stepEndActiveSet: []
   m_stepEndInactive: 1
   m_onStepStart:
+    m_PersistentCalls:
+      m_Calls: []
+  m_onStepReset:
     m_PersistentCalls:
       m_Calls: []
   m_onStepEnd:
@@ -14252,9 +14510,14 @@ MonoBehaviour:
   sceneZoneTypeId: 0
   m_stepMessage: "\u62FF\u8D77\u8BD5\u5242"
   m_stepMessageColor: {r: 1, g: 1, b: 1, a: 1}
+  m_beforeStepStartActiveSet: []
   m_stepStartActiveSet: []
+  m_stepEndActiveSet: []
   m_stepEndInactive: 1
   m_onStepStart:
+    m_PersistentCalls:
+      m_Calls: []
+  m_onStepReset:
     m_PersistentCalls:
       m_Calls: []
   m_onStepEnd:
@@ -14742,9 +15005,14 @@ MonoBehaviour:
   sceneZoneTypeId: 0
   m_stepMessage: "\u8BF7\u524D\u5F80\u5DE5\u4F5C\u53F0\u5206\u88C5\u8BD5\u5242"
   m_stepMessageColor: {r: 1, g: 1, b: 1, a: 1}
+  m_beforeStepStartActiveSet: []
   m_stepStartActiveSet: []
+  m_stepEndActiveSet: []
   m_stepEndInactive: 1
   m_onStepStart:
+    m_PersistentCalls:
+      m_Calls: []
+  m_onStepReset:
     m_PersistentCalls:
       m_Calls: []
   m_onStepEnd:
@@ -14803,9 +15071,14 @@ MonoBehaviour:
   sceneZoneTypeId: 0
   m_stepMessage: "\u653E\u7F6E\u8BD5\u5242"
   m_stepMessageColor: {r: 1, g: 1, b: 1, a: 1}
+  m_beforeStepStartActiveSet: []
   m_stepStartActiveSet: []
+  m_stepEndActiveSet: []
   m_stepEndInactive: 1
   m_onStepStart:
+    m_PersistentCalls:
+      m_Calls: []
+  m_onStepReset:
     m_PersistentCalls:
       m_Calls: []
   m_onStepEnd:
@@ -15011,9 +15284,39 @@ MonoBehaviour:
   sceneZoneTypeId: 1
   m_stepMessage: 
   m_stepMessageColor: {r: 1, g: 1, b: 1, a: 1}
-  m_stepStartActiveSet: []
-  m_stepEndInactive: 1
+  m_beforeStepStartActiveSet:
+  - Target: {fileID: 198124138}
+    Active: 0
+  - Target: {fileID: 2138369511}
+    Active: 1
+  - Target: {fileID: 1452375104}
+    Active: 1
+  - Target: {fileID: 1176158361}
+    Active: 1
+  - Target: {fileID: 1300088891}
+    Active: 0
+  - Target: {fileID: 788301072}
+    Active: 1
+  m_stepStartActiveSet:
+  - {fileID: 198124138}
+  m_stepEndActiveSet:
+  - Target: {fileID: 198124138}
+    Active: 1
+  - Target: {fileID: 2138369511}
+    Active: 0
+  - Target: {fileID: 1452375104}
+    Active: 0
+  - Target: {fileID: 1176158361}
+    Active: 0
+  - Target: {fileID: 1300088891}
+    Active: 1
+  - Target: {fileID: 788301072}
+    Active: 0
+  m_stepEndInactive: 0
   m_onStepStart:
+    m_PersistentCalls:
+      m_Calls: []
+  m_onStepReset:
     m_PersistentCalls:
       m_Calls: []
   m_onStepEnd:
@@ -15437,9 +15740,14 @@ MonoBehaviour:
   sceneZoneTypeId: 0
   m_stepMessage: "\u8131\u6389\u9632\u62A4\u670D"
   m_stepMessageColor: {r: 1, g: 1, b: 1, a: 1}
+  m_beforeStepStartActiveSet: []
   m_stepStartActiveSet: []
+  m_stepEndActiveSet: []
   m_stepEndInactive: 1
   m_onStepStart:
+    m_PersistentCalls:
+      m_Calls: []
+  m_onStepReset:
     m_PersistentCalls:
       m_Calls: []
   m_onStepEnd:
@@ -15779,9 +16087,34 @@ MonoBehaviour:
   sceneZoneTypeId: 1
   m_stepMessage: 
   m_stepMessageColor: {r: 1, g: 1, b: 1, a: 1}
+  m_beforeStepStartActiveSet:
+  - Target: {fileID: 563012775}
+    Active: 0
+  - Target: {fileID: 1084517132}
+    Active: 0
+  - Target: {fileID: 583484975}
+    Active: 0
+  - Target: {fileID: 1991884361}
+    Active: 0
+  - Target: {fileID: 1882938474}
+    Active: 0
   m_stepStartActiveSet: []
+  m_stepEndActiveSet:
+  - Target: {fileID: 563012775}
+    Active: 0
+  - Target: {fileID: 1084517132}
+    Active: 0
+  - Target: {fileID: 583484975}
+    Active: 0
+  - Target: {fileID: 1991884361}
+    Active: 0
+  - Target: {fileID: 1882938474}
+    Active: 0
   m_stepEndInactive: 1
   m_onStepStart:
+    m_PersistentCalls:
+      m_Calls: []
+  m_onStepReset:
     m_PersistentCalls:
       m_Calls: []
   m_onStepEnd:
@@ -15848,9 +16181,14 @@ MonoBehaviour:
   sceneZoneTypeId: 0
   m_stepMessage: "\u8BF7\u524D\u5F80\u5E76\u542F\u52A8\u632F\u8361\u5668"
   m_stepMessageColor: {r: 1, g: 1, b: 1, a: 1}
+  m_beforeStepStartActiveSet: []
   m_stepStartActiveSet: []
+  m_stepEndActiveSet: []
   m_stepEndInactive: 1
   m_onStepStart:
+    m_PersistentCalls:
+      m_Calls: []
+  m_onStepReset:
     m_PersistentCalls:
       m_Calls: []
   m_onStepEnd:
@@ -16194,7 +16532,9 @@ MonoBehaviour:
   sceneZoneTypeId: 0
   m_stepMessage: 
   m_stepMessageColor: {r: 1, g: 1, b: 1, a: 1}
+  m_beforeStepStartActiveSet: []
   m_stepStartActiveSet: []
+  m_stepEndActiveSet: []
   m_stepEndInactive: 1
   m_onStepStart:
     m_PersistentCalls:
@@ -16202,6 +16542,21 @@ MonoBehaviour:
       - m_Target: {fileID: 1959028852}
         m_TargetAssemblyTypeName: Starscape.Simulation.CameraManager, Assembly-CSharp
         m_MethodName: ActiveViewControl
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: "\u5206\u88C5"
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_onStepReset:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1959028852}
+        m_TargetAssemblyTypeName: Starscape.Simulation.ViewController, Assembly-CSharp
+        m_MethodName: InactiveViewControl
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -16224,6 +16579,42 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: "\u5206\u88C5"
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1959028849}
+        m_TargetAssemblyTypeName: Game.SceneManager1, Assembly-CSharp
+        m_MethodName: HideNotify
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: "\u6BCF\u5B5420\u03BCL\uFF0C\u4F9D\u6B21\u52A0\u5165"
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1959028849}
+        m_TargetAssemblyTypeName: Game.SceneManager1, Assembly-CSharp
+        m_MethodName: HideNotify
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: "\u5300\u901F\u4E0B\u538B\uFF0C\u76F4\u5230\u542C\u5230\u201D\u5494\u54D2\u201C\u58F0"
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1959028849}
+        m_TargetAssemblyTypeName: Game.SceneManager1, Assembly-CSharp
+        m_MethodName: HideNotify
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: "\u76D6\u4E0A\u76D6\u5B50"
           m_BoolArgument: 0
         m_CallState: 2
   m_playableDirector: {fileID: 475634478}
@@ -16557,10 +16948,23 @@ MonoBehaviour:
   sceneZoneTypeId: 1
   m_stepMessage: 
   m_stepMessageColor: {r: 1, g: 1, b: 1, a: 1}
+  m_beforeStepStartActiveSet:
+  - Target: {fileID: 475634476}
+    Active: 0
+  - Target: {fileID: 402656019}
+    Active: 0
   m_stepStartActiveSet:
   - {fileID: 475634476}
+  m_stepEndActiveSet:
+  - Target: {fileID: 475634476}
+    Active: 1
+  - Target: {fileID: 402656019}
+    Active: 0
   m_stepEndInactive: 0
   m_onStepStart:
+    m_PersistentCalls:
+      m_Calls: []
+  m_onStepReset:
     m_PersistentCalls:
       m_Calls: []
   m_onStepEnd:
@@ -16648,9 +17052,14 @@ MonoBehaviour:
   sceneZoneTypeId: 0
   m_stepMessage: "\u5BA4\u6E29\u590D\u878D15\u5206\u949F"
   m_stepMessageColor: {r: 1, g: 1, b: 1, a: 1}
+  m_beforeStepStartActiveSet: []
   m_stepStartActiveSet: []
+  m_stepEndActiveSet: []
   m_stepEndInactive: 1
   m_onStepStart:
+    m_PersistentCalls:
+      m_Calls: []
+  m_onStepReset:
     m_PersistentCalls:
       m_Calls: []
   m_onStepEnd:
@@ -17121,9 +17530,14 @@ MonoBehaviour:
   sceneZoneTypeId: 1
   m_stepMessage: 
   m_stepMessageColor: {r: 1, g: 1, b: 1, a: 1}
+  m_beforeStepStartActiveSet: []
   m_stepStartActiveSet: []
+  m_stepEndActiveSet: []
   m_stepEndInactive: 1
   m_onStepStart:
+    m_PersistentCalls:
+      m_Calls: []
+  m_onStepReset:
     m_PersistentCalls:
       m_Calls: []
   m_onStepEnd:
@@ -17261,9 +17675,14 @@ MonoBehaviour:
   sceneZoneTypeId: 0
   m_stepMessage: "\u5C06\u8BD5\u5242\u653E\u5230\u79BB\u5FC3\u673A"
   m_stepMessageColor: {r: 1, g: 1, b: 1, a: 1}
+  m_beforeStepStartActiveSet: []
   m_stepStartActiveSet: []
+  m_stepEndActiveSet: []
   m_stepEndInactive: 1
   m_onStepStart:
+    m_PersistentCalls:
+      m_Calls: []
+  m_onStepReset:
     m_PersistentCalls:
       m_Calls: []
   m_onStepEnd:
@@ -17815,10 +18234,31 @@ MonoBehaviour:
   sceneZoneTypeId: 1
   m_stepMessage: 
   m_stepMessageColor: {r: 1, g: 1, b: 1, a: 1}
+  m_beforeStepStartActiveSet:
+  - Target: {fileID: 1351120235}
+    Active: 0
+  - Target: {fileID: 708528919}
+    Active: 0
+  - Target: {fileID: 1991884361}
+    Active: 0
+  - Target: {fileID: 1943155369}
+    Active: 1
   m_stepStartActiveSet:
   - {fileID: 1351120235}
+  m_stepEndActiveSet:
+  - Target: {fileID: 1351120235}
+    Active: 1
+  - Target: {fileID: 708528919}
+    Active: 0
+  - Target: {fileID: 1991884361}
+    Active: 0
+  - Target: {fileID: 1943155369}
+    Active: 0
   m_stepEndInactive: 0
   m_onStepStart:
+    m_PersistentCalls:
+      m_Calls: []
+  m_onStepReset:
     m_PersistentCalls:
       m_Calls: []
   m_onStepEnd:
@@ -18063,9 +18503,14 @@ MonoBehaviour:
   sceneZoneTypeId: 1
   m_stepMessage: 
   m_stepMessageColor: {r: 1, g: 1, b: 1, a: 1}
+  m_beforeStepStartActiveSet: []
   m_stepStartActiveSet: []
+  m_stepEndActiveSet: []
   m_stepEndInactive: 1
   m_onStepStart:
+    m_PersistentCalls:
+      m_Calls: []
+  m_onStepReset:
     m_PersistentCalls:
       m_Calls: []
   m_onStepEnd:
@@ -18256,9 +18701,14 @@ MonoBehaviour:
   sceneZoneTypeId: 0
   m_stepMessage: "\u5C06\u8BD5\u5242\u653E\u5230\u4F20\u9012\u7A97"
   m_stepMessageColor: {r: 1, g: 1, b: 1, a: 1}
+  m_beforeStepStartActiveSet: []
   m_stepStartActiveSet: []
+  m_stepEndActiveSet: []
   m_stepEndInactive: 1
   m_onStepStart:
+    m_PersistentCalls:
+      m_Calls: []
+  m_onStepReset:
     m_PersistentCalls:
       m_Calls: []
   m_onStepEnd:
@@ -18329,9 +18779,14 @@ MonoBehaviour:
   sceneZoneTypeId: 0
   m_stepMessage: 
   m_stepMessageColor: {r: 1, g: 1, b: 1, a: 1}
+  m_beforeStepStartActiveSet: []
   m_stepStartActiveSet: []
+  m_stepEndActiveSet: []
   m_stepEndInactive: 1
   m_onStepStart:
+    m_PersistentCalls:
+      m_Calls: []
+  m_onStepReset:
     m_PersistentCalls:
       m_Calls: []
   m_onStepEnd:
@@ -18999,9 +19454,14 @@ MonoBehaviour:
   sceneZoneTypeId: 0
   m_stepMessage: "\u542F\u52A8\u79BB\u5FC3\u673A"
   m_stepMessageColor: {r: 1, g: 1, b: 1, a: 1}
+  m_beforeStepStartActiveSet: []
   m_stepStartActiveSet: []
+  m_stepEndActiveSet: []
   m_stepEndInactive: 1
   m_onStepStart:
+    m_PersistentCalls:
+      m_Calls: []
+  m_onStepReset:
     m_PersistentCalls:
       m_Calls: []
   m_onStepEnd:
@@ -19159,9 +19619,14 @@ MonoBehaviour:
   sceneZoneTypeId: 0
   m_stepMessage: "\u524D\u5F802\u533A"
   m_stepMessageColor: {r: 1, g: 1, b: 1, a: 1}
+  m_beforeStepStartActiveSet: []
   m_stepStartActiveSet: []
+  m_stepEndActiveSet: []
   m_stepEndInactive: 1
   m_onStepStart:
+    m_PersistentCalls:
+      m_Calls: []
+  m_onStepReset:
     m_PersistentCalls:
       m_Calls: []
   m_onStepEnd:
@@ -19407,9 +19872,14 @@ MonoBehaviour:
   sceneZoneTypeId: 0
   m_stepMessage: 
   m_stepMessageColor: {r: 1, g: 1, b: 1, a: 1}
+  m_beforeStepStartActiveSet: []
   m_stepStartActiveSet: []
+  m_stepEndActiveSet: []
   m_stepEndInactive: 1
   m_onStepStart:
+    m_PersistentCalls:
+      m_Calls: []
+  m_onStepReset:
     m_PersistentCalls:
       m_Calls: []
   m_onStepEnd:
@@ -19474,7 +19944,9 @@ MonoBehaviour:
   sceneZoneTypeId: 0
   m_stepMessage: 
   m_stepMessageColor: {r: 1, g: 1, b: 1, a: 1}
+  m_beforeStepStartActiveSet: []
   m_stepStartActiveSet: []
+  m_stepEndActiveSet: []
   m_stepEndInactive: 1
   m_onStepStart:
     m_PersistentCalls:
@@ -19503,6 +19975,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  m_onStepReset:
+    m_PersistentCalls:
+      m_Calls: []
   m_onStepEnd:
     m_PersistentCalls:
       m_Calls:
@@ -20203,7 +20678,9 @@ MonoBehaviour:
   sceneZoneTypeId: 0
   m_stepMessage: "\u64E6\u62ED\u5DE5\u4F5C\u53F0"
   m_stepMessageColor: {r: 1, g: 1, b: 1, a: 1}
+  m_beforeStepStartActiveSet: []
   m_stepStartActiveSet: []
+  m_stepEndActiveSet: []
   m_stepEndInactive: 1
   m_onStepStart:
     m_PersistentCalls:
@@ -20220,6 +20697,9 @@ MonoBehaviour:
           m_StringArgument: "\u5DE5\u4F5C\u53F0\u6D88\u6BD2"
           m_BoolArgument: 0
         m_CallState: 2
+  m_onStepReset:
+    m_PersistentCalls:
+      m_Calls: []
   m_onStepEnd:
     m_PersistentCalls:
       m_Calls:
@@ -20371,12 +20851,17 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1456152616003882327, guid: bd0b32aa6b4ee11489ef757e575972a3, type: 3}
   m_PrefabInstance: {fileID: 2102713223}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 2102713226}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1b3a2db4878c49aaafee6b8e7a23573c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &2102713226 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 89402161834343762, guid: bd0b32aa6b4ee11489ef757e575972a3, type: 3}
+  m_PrefabInstance: {fileID: 2102713223}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2103381522
 GameObject:
   m_ObjectHideFlags: 0
@@ -20803,7 +21288,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1456152616003882327, guid: bd0b32aa6b4ee11489ef757e575972a3, type: 3}
   m_PrefabInstance: {fileID: 788301070}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 788301072}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1b3a2db4878c49aaafee6b8e7a23573c, type: 3}

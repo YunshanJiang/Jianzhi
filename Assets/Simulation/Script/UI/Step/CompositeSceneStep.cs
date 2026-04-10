@@ -202,17 +202,26 @@ namespace Starscape.Simulation
 
         private void CancelRunningChildren()
         {
-            foreach (var step in m_activeSteps)
+            while (m_activeSteps.Count > 0)
             {
-                if (step == null || !step.IsRunning)
+                SceneStepBase step = null;
+                var enumerator = m_activeSteps.GetEnumerator();
+                if (enumerator.MoveNext())
                 {
-                    continue;
+                    step = enumerator.Current;
                 }
 
+                if (step == null)
+                {
+                    break;
+                }
+
+                m_activeSteps.Remove(step);
+                // 必须始终 StepReset：子步骤在 StepEnd 开头会把 IsRunning 置 false，
+                // 若仍留在 m_activeSteps 中，旧逻辑会跳过 StepReset，导致 Notify 无法 Hide。
                 step.StepReset();
             }
 
-            m_activeSteps.Clear();
             m_waitingSteps.Clear();
         }
 
@@ -234,6 +243,13 @@ namespace Starscape.Simulation
         private void CancelPendingWork()
         {
             CancelRunningChildren();
+            foreach (var step in GetComponentsInChildren<SceneStepBase>(true))
+            {
+                if (step != null && step != this)
+                {
+                    step.ForceHideStepMessage();
+                }
+            }
             CleanupChildren();
             m_isFinishing = false;
             m_completedStepCount = 0;

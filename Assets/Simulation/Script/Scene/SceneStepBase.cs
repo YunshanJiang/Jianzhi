@@ -1,15 +1,28 @@
 ﻿using Sirenix.OdinInspector;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
 namespace Starscape.Simulation
 {
     public delegate void StepStartHandler(SceneStepBase _step);
+    public delegate void StepResetHandler(SceneStepBase _step);
     public delegate void StepEndHandler(SceneStepBase _step);
 
     public abstract class SceneStepBase : MonoBehaviour
     {
+        [System.Serializable]
+        private class GameObjectActiveState
+        {
+            [SerializeField]
+            public GameObject Target;
+
+            [SerializeField]
+            public bool Active = true;
+        }
+
         public event StepStartHandler OnStepStartEvent;
+        public event StepResetHandler OnStepResetEvent;
         public event StepEndHandler OnStepEndEvent;
 
 
@@ -40,7 +53,13 @@ namespace Starscape.Simulation
 
         [TitleGroup("基础设置")]
         [SerializeField]
+        private List<GameObjectActiveState> m_beforeStepStartActiveSet = new();
+        [TitleGroup("基础设置")]
+        [SerializeField]
         private GameObject[] m_stepStartActiveSet;
+        [TitleGroup("基础设置")]
+        [SerializeField]
+        private List<GameObjectActiveState> m_stepEndActiveSet = new();
 
         [TitleGroup("基础设置")][ShowIf("@m_stepStartActiveSet.Length > 0")]
         [SerializeField][PropertyTooltip("步骤结束时是否将步骤开始时激活的对象设为不激活")]
@@ -64,7 +83,7 @@ namespace Starscape.Simulation
 
         [TitleGroup("事件")]
         [SerializeField]
-        private UnityEvent m_onStepStart, m_onStepEnd;
+        private UnityEvent m_onStepStart, m_onStepReset, m_onStepEnd;
 
        
 
@@ -106,8 +125,10 @@ namespace Starscape.Simulation
             m_onStepEnd?.Invoke();
             OnStepEndEvent?.Invoke(this);
             GameManager.Instance.SceneManager.RaiseOnStepEndEvent(this);
+
             if (m_stepMessageId != 0)
             {
+                
                 GameManager.Instance.UIManager.HideNotify(m_stepMessageId);
                 m_stepMessageId = 0;
             }
@@ -122,12 +143,27 @@ namespace Starscape.Simulation
         {
             IsRunning = false;
             m_isStarted = false;
+            m_onStepReset?.Invoke();
             if (m_stepMessageId != 0 && GameManager.Instance != null && GameManager.Instance.UIManager != null)
             {
+                
                 GameManager.Instance.UIManager.HideNotify(m_stepMessageId);
                 m_stepMessageId = 0;
             }
             OnStepReset();
+        }
+
+        /// <summary>
+        /// 仅关闭步骤提示条，不触发 OnStepReset。用于跳转时兜底清理子步骤可能残留的 Notify。
+        /// </summary>
+        public void ForceHideStepMessage()
+        {
+            if (m_stepMessageId == 0 || GameManager.Instance == null || GameManager.Instance.UIManager == null)
+            {
+                return;
+            }
+            GameManager.Instance.UIManager.HideNotify(m_stepMessageId);
+            m_stepMessageId = 0;
         }
 
         public void StepResume()
@@ -139,6 +175,30 @@ namespace Starscape.Simulation
                 obj.SetActive(true);
             }
             OnStepResume();
+        }
+
+        public void ApplyBeforeStepStartActiveSet()
+        {
+            foreach (var activeState in m_beforeStepStartActiveSet)
+            {
+                if (activeState?.Target == null)
+                {
+                    continue;
+                }
+                activeState.Target.SetActive(activeState.Active);
+            }
+        }
+
+        public void ApplyStepEndActiveSet()
+        {
+            foreach (var activeState in m_stepEndActiveSet)
+            {
+                if (activeState?.Target == null)
+                {
+                    continue;
+                }
+                activeState.Target.SetActive(activeState.Active);
+            }
         }
 
         protected virtual void OnStepStart()

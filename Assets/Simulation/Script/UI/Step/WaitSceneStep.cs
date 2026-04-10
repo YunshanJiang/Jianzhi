@@ -37,6 +37,7 @@ namespace Starscape.Simulation
         protected override void OnStepReset()
         {
             base.OnStepReset();
+            StepEnd();
             m_timer = 0;
         }
 

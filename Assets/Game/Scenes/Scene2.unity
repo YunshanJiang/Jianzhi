@@ -244,11 +244,17 @@ MonoBehaviour:
   m_stepId: 
   m_stepName: "\u4EA4\u4E92"
   m_isDisplayStep: 1
+  sceneZoneTypeId: 0
   m_stepMessage: "\u542F\u52A8\u6838\u9178\u63D0\u53D6\u4EEA\u7A0B\u5E8F"
   m_stepMessageColor: {r: 1, g: 1, b: 1, a: 1}
+  m_beforeStepStartActiveSet: []
   m_stepStartActiveSet: []
+  m_stepEndActiveSet: []
   m_stepEndInactive: 1
   m_onStepStart:
+    m_PersistentCalls:
+      m_Calls: []
+  m_onStepReset:
     m_PersistentCalls:
       m_Calls: []
   m_onStepEnd:
@@ -1124,11 +1130,17 @@ MonoBehaviour:
   m_stepId: 
   m_stepName: "\u62FF\u53D6"
   m_isDisplayStep: 1
+  sceneZoneTypeId: 0
   m_stepMessage: "\u4ECE\u751F\u7269\u5B89\u5168\u67DC\u62FF\u53D6\u6DF1\u5B54\u677F"
   m_stepMessageColor: {r: 1, g: 1, b: 1, a: 1}
+  m_beforeStepStartActiveSet: []
   m_stepStartActiveSet: []
+  m_stepEndActiveSet: []
   m_stepEndInactive: 1
   m_onStepStart:
+    m_PersistentCalls:
+      m_Calls: []
+  m_onStepReset:
     m_PersistentCalls:
       m_Calls: []
   m_onStepEnd:
@@ -1400,9 +1412,12 @@ MonoBehaviour:
   m_stepId: 1
   m_stepName: "\u7A7F\u6234\u9632\u62A4\u88C5\u5907"
   m_isDisplayStep: 1
+  sceneZoneTypeId: 0
   m_stepMessage: 
   m_stepMessageColor: {r: 1, g: 1, b: 1, a: 1}
+  m_beforeStepStartActiveSet: []
   m_stepStartActiveSet: []
+  m_stepEndActiveSet: []
   m_stepEndInactive: 1
   m_onStepStart:
     m_PersistentCalls:
@@ -1431,6 +1446,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  m_onStepReset:
+    m_PersistentCalls:
+      m_Calls: []
   m_onStepEnd:
     m_PersistentCalls:
       m_Calls:
@@ -1471,7 +1489,7 @@ GameObject:
   - component: {fileID: 222444652}
   - component: {fileID: 222444653}
   m_Layer: 0
-  m_Name: "Step3-\u6DF1\u5B54\u677F\u653E\u5230\u6838\u9178\u63D0\u53D6\u4EEA"
+  m_Name: "Step3-\u542F\u52A8\u6838\u9178\u63D0\u53D6\u7A0B\u5E8F"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1511,13 +1529,35 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_stepId: 3
-  m_stepName: "\u6838\u9178\u63D0\u53D6"
+  m_stepName: "\u542F\u52A8\u6838\u9178\u63D0\u53D6\u7A0B\u5E8F"
   m_isDisplayStep: 1
+  sceneZoneTypeId: 1
   m_stepMessage: 
   m_stepMessageColor: {r: 1, g: 1, b: 1, a: 1}
+  m_beforeStepStartActiveSet:
+  - Target: {fileID: 645544738}
+    Active: 1
+  - Target: {fileID: 681030335}
+    Active: 0
+  - Target: {fileID: 1419102813}
+    Active: 1
+  - Target: {fileID: 1229792052}
+    Active: 0
   m_stepStartActiveSet: []
+  m_stepEndActiveSet:
+  - Target: {fileID: 645544738}
+    Active: 1
+  - Target: {fileID: 681030335}
+    Active: 0
+  - Target: {fileID: 1419102813}
+    Active: 0
+  - Target: {fileID: 1229792052}
+    Active: 1
   m_stepEndInactive: 1
   m_onStepStart:
+    m_PersistentCalls:
+      m_Calls: []
+  m_onStepReset:
     m_PersistentCalls:
       m_Calls: []
   m_onStepEnd:
@@ -2593,11 +2633,17 @@ MonoBehaviour:
   m_stepId: 
   m_stepName: "\u4EA4\u4E92"
   m_isDisplayStep: 1
+  sceneZoneTypeId: 0
   m_stepMessage: "\u5C06\u6DF1\u5B54\u677F\u653E\u5165\u6838\u9178\u63D0\u53D6\u4EEA"
   m_stepMessageColor: {r: 1, g: 1, b: 1, a: 1}
+  m_beforeStepStartActiveSet: []
   m_stepStartActiveSet: []
+  m_stepEndActiveSet: []
   m_stepEndInactive: 1
   m_onStepStart:
+    m_PersistentCalls:
+      m_Calls: []
+  m_onStepReset:
     m_PersistentCalls:
       m_Calls: []
   m_onStepEnd:
@@ -2797,11 +2843,17 @@ MonoBehaviour:
   m_stepId: 
   m_stepName: "\u653E\u7F6E\u6DF1\u5B54\u677F"
   m_isDisplayStep: 1
+  sceneZoneTypeId: 0
   m_stepMessage: "\u5C06\u6DF1\u5B54\u677F\u653E\u5230\u751F\u7269\u5B89\u5168\u67DC\u5185"
   m_stepMessageColor: {r: 1, g: 1, b: 1, a: 1}
+  m_beforeStepStartActiveSet: []
   m_stepStartActiveSet: []
+  m_stepEndActiveSet: []
   m_stepEndInactive: 1
   m_onStepStart:
+    m_PersistentCalls:
+      m_Calls: []
+  m_onStepReset:
     m_PersistentCalls:
       m_Calls: []
   m_onStepEnd:
@@ -2909,6 +2961,78 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 411231906}
   m_Mesh: {fileID: 9043639471205694055, guid: 95451adb7109d7b41ba76109e0e82012, type: 3}
+--- !u!1 &414248487
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 414248488}
+  - component: {fileID: 414248489}
+  m_Layer: 0
+  m_Name: "\u5207\u6362\u573A\u666F"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &414248488
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 414248487}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1072457736}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &414248489
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 414248487}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef4cb6d8fc854301845692064fcfafc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_stepId: 
+  m_stepName: "\u5207\u6362\u573A\u666F"
+  m_isDisplayStep: 0
+  sceneZoneTypeId: 0
+  m_stepMessage: 
+  m_stepMessageColor: {r: 1, g: 1, b: 1, a: 1}
+  m_beforeStepStartActiveSet: []
+  m_stepStartActiveSet: []
+  m_stepEndActiveSet: []
+  m_stepEndInactive: 1
+  m_onStepStart:
+    m_PersistentCalls:
+      m_Calls: []
+  m_onStepReset:
+    m_PersistentCalls:
+      m_Calls: []
+  m_onStepEnd:
+    m_PersistentCalls:
+      m_Calls: []
+  m_sceneName: Scene3
+  m_fadeInDuration: 2
+  m_fadeOutDuration: 1
+  m_fadeInCompleteEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_sceneLoadedCompleteEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1001 &445486655
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3632,11 +3756,17 @@ MonoBehaviour:
   m_stepId: 4
   m_stepName: "\u653E\u7F6EPCR\u53CD\u5E94\u4F53\u7CFB"
   m_isDisplayStep: 1
+  sceneZoneTypeId: 0
   m_stepMessage: "\u5C06PCR\u53CD\u5E94\u4F53\u7CFB\u653E\u5230\u751F\u7269\u5B89\u5168\u67DC\u5185"
   m_stepMessageColor: {r: 1, g: 1, b: 1, a: 1}
+  m_beforeStepStartActiveSet: []
   m_stepStartActiveSet: []
+  m_stepEndActiveSet: []
   m_stepEndInactive: 1
   m_onStepStart:
+    m_PersistentCalls:
+      m_Calls: []
+  m_onStepReset:
     m_PersistentCalls:
       m_Calls: []
   m_onStepEnd:
@@ -3763,6 +3893,96 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d2610d3df3156043a35e47d4e6f5827, type: 3}
+--- !u!1 &493232222
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 493232223}
+  - component: {fileID: 493232224}
+  m_Layer: 0
+  m_Name: "\u4EA4\u4E92-\u5207\u6362\u573A\u666F"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &493232223
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 493232222}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1072457736}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &493232224
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 493232222}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08d308ac00e845a582daa3326e71d5d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_stepId: 
+  m_stepName: "\u64E6\u62ED"
+  m_isDisplayStep: 1
+  sceneZoneTypeId: 0
+  m_stepMessage: "\u524D\u5F803\u533A"
+  m_stepMessageColor: {r: 1, g: 1, b: 1, a: 1}
+  m_beforeStepStartActiveSet: []
+  m_stepStartActiveSet: []
+  m_stepEndActiveSet: []
+  m_stepEndInactive: 1
+  m_onStepStart:
+    m_PersistentCalls:
+      m_Calls: []
+  m_onStepReset:
+    m_PersistentCalls:
+      m_Calls: []
+  m_onStepEnd:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 445486658}
+        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
+        m_MethodName: SetMovable
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 445486658}
+        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
+        m_MethodName: SetRotate
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_interactive: {fileID: 1426612065}
+  m_interactiveContent: "\u5F00\u95E8"
+  m_stepEndDisableInteractive: 1
 --- !u!1 &550827174
 GameObject:
   m_ObjectHideFlags: 0
@@ -4425,11 +4645,17 @@ MonoBehaviour:
   m_stepId: 
   m_stepName: "\u62FF\u53D6\u6DF1\u5B54\u677F"
   m_isDisplayStep: 1
+  sceneZoneTypeId: 0
   m_stepMessage: "\u5C06\u6838\u9178\u52A0\u5165\u5230PCR\u53CD\u5E94\u4F53\u7CFB"
   m_stepMessageColor: {r: 1, g: 1, b: 1, a: 1}
+  m_beforeStepStartActiveSet: []
   m_stepStartActiveSet: []
+  m_stepEndActiveSet: []
   m_stepEndInactive: 1
   m_onStepStart:
+    m_PersistentCalls:
+      m_Calls: []
+  m_onStepReset:
     m_PersistentCalls:
       m_Calls: []
   m_onStepEnd:
@@ -4470,9 +4696,12 @@ MonoBehaviour:
   m_stepId: 
   m_stepName: "\u79FB\u6DB2"
   m_isDisplayStep: 0
+  sceneZoneTypeId: 0
   m_stepMessage: "\u5438\u7BA1\u5C16\u7AEF\u4E0D\u89E6\u78B0\u7BA1\u58C1\uFF0C\u6BCF\u4E2A\u6837\u672C\u66F4\u63621\u652F\u5438\u7BA1"
   m_stepMessageColor: {r: 1, g: 1, b: 1, a: 1}
+  m_beforeStepStartActiveSet: []
   m_stepStartActiveSet: []
+  m_stepEndActiveSet: []
   m_stepEndInactive: 1
   m_onStepStart:
     m_PersistentCalls:
@@ -4489,6 +4718,9 @@ MonoBehaviour:
           m_StringArgument: "\u5DE5\u4F5C\u53F0-\u53F3"
           m_BoolArgument: 0
         m_CallState: 2
+  m_onStepReset:
+    m_PersistentCalls:
+      m_Calls: []
   m_onStepEnd:
     m_PersistentCalls:
       m_Calls:
@@ -5690,9 +5922,12 @@ MonoBehaviour:
   m_stepId: 
   m_stepName: "\u79FB\u6DB2"
   m_isDisplayStep: 0
+  sceneZoneTypeId: 0
   m_stepMessage: 
   m_stepMessageColor: {r: 1, g: 1, b: 1, a: 1}
+  m_beforeStepStartActiveSet: []
   m_stepStartActiveSet: []
+  m_stepEndActiveSet: []
   m_stepEndInactive: 1
   m_onStepStart:
     m_PersistentCalls:
@@ -5721,6 +5956,9 @@ MonoBehaviour:
           m_StringArgument: "\u5DE5\u4F5C\u53F0-\u53F3"
           m_BoolArgument: 0
         m_CallState: 2
+  m_onStepReset:
+    m_PersistentCalls:
+      m_Calls: []
   m_onStepEnd:
     m_PersistentCalls:
       m_Calls:
@@ -5845,11 +6083,17 @@ MonoBehaviour:
   m_stepId: 4
   m_stepName: "\u62FF\u53D6PCR\u53CD\u5E94\u4F53\u7CFB"
   m_isDisplayStep: 1
+  sceneZoneTypeId: 0
   m_stepMessage: "\u62FF\u53D6PCR\u53CD\u5E94\u4F53\u7CFB"
   m_stepMessageColor: {r: 1, g: 1, b: 1, a: 1}
+  m_beforeStepStartActiveSet: []
   m_stepStartActiveSet: []
+  m_stepEndActiveSet: []
   m_stepEndInactive: 1
   m_onStepStart:
+    m_PersistentCalls:
+      m_Calls: []
+  m_onStepReset:
     m_PersistentCalls:
       m_Calls: []
   m_onStepEnd:
@@ -5917,11 +6161,17 @@ MonoBehaviour:
   m_stepId: 4
   m_stepName: "\u62FF\u53D6PCR\u53CD\u5E94\u4F53\u7CFB"
   m_isDisplayStep: 1
+  sceneZoneTypeId: 0
   m_stepMessage: "\u4ECE1-2\u533A\u4F20\u9012\u7A97\u62FF\u53D6PCR\u53CD\u5E94\u4F53\u7CFB"
   m_stepMessageColor: {r: 1, g: 1, b: 1, a: 1}
+  m_beforeStepStartActiveSet: []
   m_stepStartActiveSet: []
+  m_stepEndActiveSet: []
   m_stepEndInactive: 1
   m_onStepStart:
+    m_PersistentCalls:
+      m_Calls: []
+  m_onStepReset:
     m_PersistentCalls:
       m_Calls: []
   m_onStepEnd:
@@ -5953,7 +6203,7 @@ GameObject:
   - component: {fileID: 832482532}
   - component: {fileID: 832482531}
   m_Layer: 0
-  m_Name: "Step2-\u79FB\u6DB2"
+  m_Name: "Step2-\u6838\u9178\u63D0\u53D6"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5972,14 +6222,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_stepId: 2
-  m_stepName: "\u79FB\u6DB2"
+  m_stepName: "\u6838\u9178\u63D0\u53D6"
   m_isDisplayStep: 1
+  sceneZoneTypeId: 1
   m_stepMessage: 
   m_stepMessageColor: {r: 1, g: 1, b: 1, a: 1}
+  m_beforeStepStartActiveSet:
+  - Target: {fileID: 1419102813}
+    Active: 0
   m_stepStartActiveSet:
   - {fileID: 1419102813}
+  m_stepEndActiveSet:
+  - Target: {fileID: 1419102813}
+    Active: 1
   m_stepEndInactive: 0
   m_onStepStart:
+    m_PersistentCalls:
+      m_Calls: []
+  m_onStepReset:
     m_PersistentCalls:
       m_Calls: []
   m_onStepEnd:
@@ -6430,11 +6690,17 @@ MonoBehaviour:
   m_stepId: 
   m_stepName: "\u64E6\u62ED"
   m_isDisplayStep: 1
+  sceneZoneTypeId: 0
   m_stepMessage: "\u8BF7\u524D\u5F80\u8863\u67DC\u7A7F\u9632\u62A4\u670D"
   m_stepMessageColor: {r: 1, g: 1, b: 1, a: 1}
+  m_beforeStepStartActiveSet: []
   m_stepStartActiveSet: []
+  m_stepEndActiveSet: []
   m_stepEndInactive: 1
   m_onStepStart:
+    m_PersistentCalls:
+      m_Calls: []
+  m_onStepReset:
     m_PersistentCalls:
       m_Calls: []
   m_onStepEnd:
@@ -6490,11 +6756,17 @@ MonoBehaviour:
   m_stepId: 
   m_stepName: "\u62FF\u53D6\u6837\u672C"
   m_isDisplayStep: 1
+  sceneZoneTypeId: 0
   m_stepMessage: "\u4ECE\u751F\u7269\u5B89\u5168\u67DC\u62FF\u53D6\u8BD5\u5242"
   m_stepMessageColor: {r: 1, g: 1, b: 1, a: 1}
+  m_beforeStepStartActiveSet: []
   m_stepStartActiveSet: []
+  m_stepEndActiveSet: []
   m_stepEndInactive: 1
   m_onStepStart:
+    m_PersistentCalls:
+      m_Calls: []
+  m_onStepReset:
     m_PersistentCalls:
       m_Calls: []
   m_onStepEnd:
@@ -6613,113 +6885,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 869458851}
   m_Mesh: {fileID: 76512580045252557, guid: b14f0d8af4ea00049ad6ea21ab3ecb84, type: 3}
---- !u!1 &878860110
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 878860111}
-  - component: {fileID: 878860112}
-  m_Layer: 0
-  m_Name: "\u8131\u9632\u62A4\u670D"
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &878860111
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 878860110}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1386224513}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &878860112
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 878860110}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b29556f05c1d477da2be87539162ca95, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_stepId: 
-  m_stepName: "\u8131\u4E2A\u4EBA\u9632\u62A4\u88C5\u5907"
-  m_isDisplayStep: 1
-  m_stepMessage: 
-  m_stepMessageColor: {r: 1, g: 1, b: 1, a: 1}
-  m_stepStartActiveSet: []
-  m_stepEndInactive: 1
-  m_onStepStart:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 445486658}
-        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
-        m_MethodName: SetMovable
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 445486658}
-        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
-        m_MethodName: SetRotate
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  m_onStepEnd:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 445486658}
-        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
-        m_MethodName: SetMovable
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 445486658}
-        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
-        m_MethodName: SetRotate
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-  m_quizBankData: {fileID: 11400000, guid: 3f3c86d1277ed3441bd52653e6dfd45d, type: 2}
-  m_questionId: Scene2Unequip
 --- !u!1 &902230633
 GameObject:
   m_ObjectHideFlags: 0
@@ -7688,11 +7853,17 @@ MonoBehaviour:
   m_stepId: 1
   m_stepName: "\u5B9E\u9A8C\u524D\u51C6\u5907"
   m_isDisplayStep: 1
+  sceneZoneTypeId: 0
   m_stepMessage: 
   m_stepMessageColor: {r: 1, g: 1, b: 1, a: 1}
+  m_beforeStepStartActiveSet: []
   m_stepStartActiveSet: []
+  m_stepEndActiveSet: []
   m_stepEndInactive: 1
   m_onStepStart:
+    m_PersistentCalls:
+      m_Calls: []
+  m_onStepReset:
     m_PersistentCalls:
       m_Calls: []
   m_onStepEnd:
@@ -7704,6 +7875,76 @@ MonoBehaviour:
   - {fileID: 864675344}
   - {fileID: 219025322}
   - {fileID: 1080721353}
+--- !u!1 &1072457735
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1072457736}
+  - component: {fileID: 1072457737}
+  m_Layer: 0
+  m_Name: "Step7-\u8FDB\u5165\u4E09\u533A"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1072457736
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1072457735}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 493232223}
+  - {fileID: 414248488}
+  m_Father: {fileID: 1600540341}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1072457737
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1072457735}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c1930931cd14e3eb333521cf661e578, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_stepId: 7
+  m_stepName: "\u8FDB\u51653\u533A"
+  m_isDisplayStep: 1
+  sceneZoneTypeId: 0
+  m_stepMessage: 
+  m_stepMessageColor: {r: 1, g: 1, b: 1, a: 1}
+  m_beforeStepStartActiveSet: []
+  m_stepStartActiveSet: []
+  m_stepEndActiveSet: []
+  m_stepEndInactive: 1
+  m_onStepStart:
+    m_PersistentCalls:
+      m_Calls: []
+  m_onStepReset:
+    m_PersistentCalls:
+      m_Calls: []
+  m_onStepEnd:
+    m_PersistentCalls:
+      m_Calls: []
+  m_compositeType: 0
+  m_completeCondition: 0
+  m_sceneStepSet:
+  - {fileID: 493232224}
+  - {fileID: 414248489}
 --- !u!1 &1079535804
 GameObject:
   m_ObjectHideFlags: 0
@@ -7837,11 +8078,17 @@ MonoBehaviour:
   m_stepId: 
   m_stepName: "\u64E6\u62ED"
   m_isDisplayStep: 1
+  sceneZoneTypeId: 0
   m_stepMessage: "\u8FDB\u5165\u5B9E\u9A8C\u5BA4"
   m_stepMessageColor: {r: 1, g: 1, b: 1, a: 1}
+  m_beforeStepStartActiveSet: []
   m_stepStartActiveSet: []
+  m_stepEndActiveSet: []
   m_stepEndInactive: 1
   m_onStepStart:
+    m_PersistentCalls:
+      m_Calls: []
+  m_onStepReset:
     m_PersistentCalls:
       m_Calls: []
   m_onStepEnd:
@@ -7944,11 +8191,17 @@ MonoBehaviour:
   m_stepId: 
   m_stepName: "\u64E6\u62ED"
   m_isDisplayStep: 1
+  sceneZoneTypeId: 0
   m_stepMessage: "\u79BB\u5F00\u5B9E\u9A8C\u5BA4"
   m_stepMessageColor: {r: 1, g: 1, b: 1, a: 1}
+  m_beforeStepStartActiveSet: []
   m_stepStartActiveSet: []
+  m_stepEndActiveSet: []
   m_stepEndInactive: 1
   m_onStepStart:
+    m_PersistentCalls:
+      m_Calls: []
+  m_onStepReset:
     m_PersistentCalls:
       m_Calls: []
   m_onStepEnd:
@@ -8016,11 +8269,17 @@ MonoBehaviour:
   m_stepId: 
   m_stepName: "\u653E\u7F6E\u6837\u672C"
   m_isDisplayStep: 1
+  sceneZoneTypeId: 0
   m_stepMessage: "\u653E\u7F6E\u8BD5\u5242"
   m_stepMessageColor: {r: 1, g: 1, b: 1, a: 1}
+  m_beforeStepStartActiveSet: []
   m_stepStartActiveSet: []
+  m_stepEndActiveSet: []
   m_stepEndInactive: 1
   m_onStepStart:
+    m_PersistentCalls:
+      m_Calls: []
+  m_onStepReset:
     m_PersistentCalls:
       m_Calls: []
   m_onStepEnd:
@@ -8166,11 +8425,17 @@ MonoBehaviour:
   m_stepId: 
   m_stepName: "\u653E\u7F6E\u6837\u672C"
   m_isDisplayStep: 1
+  sceneZoneTypeId: 0
   m_stepMessage: "\u5C06\u6837\u672C\u653E\u51652-3\u533A\u4F20\u9012\u7A97\u5185"
   m_stepMessageColor: {r: 1, g: 1, b: 1, a: 1}
+  m_beforeStepStartActiveSet: []
   m_stepStartActiveSet: []
+  m_stepEndActiveSet: []
   m_stepEndInactive: 1
   m_onStepStart:
+    m_PersistentCalls:
+      m_Calls: []
+  m_onStepReset:
     m_PersistentCalls:
       m_Calls: []
   m_onStepEnd:
@@ -8423,7 +8688,7 @@ GameObject:
   - component: {fileID: 1205245573}
   - component: {fileID: 1205245574}
   m_Layer: 0
-  m_Name: "Step6-\u4F20\u9012\u8BD5\u5242\u81F3\u4E09\u533A"
+  m_Name: "Step6-\u653E\u5165\u4F20\u9012\u7A97"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8461,13 +8726,31 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_stepId: 6
-  m_stepName: "\u4F20\u9012\u8BD5\u5242\u81F33\u533A"
+  m_stepName: "\u653E\u5165\u4F20\u9012\u7A97"
   m_isDisplayStep: 1
+  sceneZoneTypeId: 1
   m_stepMessage: 
   m_stepMessageColor: {r: 1, g: 1, b: 1, a: 1}
+  m_beforeStepStartActiveSet:
+  - Target: {fileID: 1426787254}
+    Active: 1
+  - Target: {fileID: 2098684924}
+    Active: 1
+  - Target: {fileID: 1178726756}
+    Active: 0
   m_stepStartActiveSet: []
+  m_stepEndActiveSet:
+  - Target: {fileID: 1426787254}
+    Active: 0
+  - Target: {fileID: 2098684924}
+    Active: 0
+  - Target: {fileID: 1178726756}
+    Active: 1
   m_stepEndInactive: 1
   m_onStepStart:
+    m_PersistentCalls:
+      m_Calls: []
+  m_onStepReset:
     m_PersistentCalls:
       m_Calls: []
   m_onStepEnd:
@@ -8613,11 +8896,17 @@ MonoBehaviour:
   m_stepId: 
   m_stepName: "\u62FF\u53D6\u6DF1\u5B54\u677F"
   m_isDisplayStep: 1
+  sceneZoneTypeId: 0
   m_stepMessage: "\u4ECE\u6838\u9178\u63D0\u53D6\u4EEA\u62FF\u8D77\u6DF1\u5B54\u677F"
   m_stepMessageColor: {r: 1, g: 1, b: 1, a: 1}
+  m_beforeStepStartActiveSet: []
   m_stepStartActiveSet: []
+  m_stepEndActiveSet: []
   m_stepEndInactive: 1
   m_onStepStart:
+    m_PersistentCalls:
+      m_Calls: []
+  m_onStepReset:
     m_PersistentCalls:
       m_Calls: []
   m_onStepEnd:
@@ -8716,78 +9005,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 4c7ade263b336f5458ff1073de0ad86c, type: 3}
   m_PrefabInstance: {fileID: 1215942801}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1225823288
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1225823289}
-  - component: {fileID: 1225823290}
-  m_Layer: 0
-  m_Name: "\u4EA4\u4E92-\u8131\u9632\u62A4\u670D"
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1225823289
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1225823288}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1386224513}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1225823290
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1225823288}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 08d308ac00e845a582daa3326e71d5d2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_stepId: 
-  m_stepName: "\u64E6\u62ED"
-  m_isDisplayStep: 1
-  m_stepMessage: "\u8131\u6389\u9632\u62A4\u670D"
-  m_stepMessageColor: {r: 1, g: 1, b: 1, a: 1}
-  m_stepStartActiveSet: []
-  m_stepEndInactive: 1
-  m_onStepStart:
-    m_PersistentCalls:
-      m_Calls: []
-  m_onStepEnd:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 589951817}
-        m_TargetAssemblyTypeName: UnityEngine.Animation, UnityEngine
-        m_MethodName: CrossFade
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: "\u573A\u666F2-\u5173\u95E8"
-          m_BoolArgument: 0
-        m_CallState: 2
-  m_interactive: {fileID: 459991158}
-  m_interactiveContent: "\u8131\u9632\u62A4\u670D"
-  m_stepEndDisableInteractive: 1
 --- !u!1 &1229792052
 GameObject:
   m_ObjectHideFlags: 0
@@ -9517,11 +9734,17 @@ MonoBehaviour:
   m_stepId: 
   m_stepName: "\u79FB\u6DB2"
   m_isDisplayStep: 1
+  sceneZoneTypeId: 0
   m_stepMessage: "\u8BF7\u524D\u5F80\u751F\u7269\u5B89\u5168\u67DC\uFF0C\u5C06\u5F85\u6D4B\u6837\u672C\u52A0\u5165\u5230\u6DF1\u5B54\u677F"
   m_stepMessageColor: {r: 1, g: 1, b: 1, a: 1}
+  m_beforeStepStartActiveSet: []
   m_stepStartActiveSet: []
+  m_stepEndActiveSet: []
   m_stepEndInactive: 1
   m_onStepStart:
+    m_PersistentCalls:
+      m_Calls: []
+  m_onStepReset:
     m_PersistentCalls:
       m_Calls: []
   m_onStepEnd:
@@ -9702,7 +9925,7 @@ GameObject:
   - component: {fileID: 1386224513}
   - component: {fileID: 1386224514}
   m_Layer: 0
-  m_Name: "Step7-\u8FDB\u5165\u4E09\u533A"
+  m_Name: "Step7-\u8FDB\u5165\u7F13\u51B2\u533A"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9722,10 +9945,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1093196169}
-  - {fileID: 1225823289}
-  - {fileID: 878860111}
-  - {fileID: 1963243346}
-  - {fileID: 2128106974}
   m_Father: {fileID: 1600540341}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1386224514
@@ -9743,11 +9962,17 @@ MonoBehaviour:
   m_stepId: 7
   m_stepName: "\u8FDB\u51653\u533A"
   m_isDisplayStep: 1
+  sceneZoneTypeId: 1
   m_stepMessage: 
   m_stepMessageColor: {r: 1, g: 1, b: 1, a: 1}
+  m_beforeStepStartActiveSet: []
   m_stepStartActiveSet: []
+  m_stepEndActiveSet: []
   m_stepEndInactive: 1
   m_onStepStart:
+    m_PersistentCalls:
+      m_Calls: []
+  m_onStepReset:
     m_PersistentCalls:
       m_Calls: []
   m_onStepEnd:
@@ -9757,10 +9982,6 @@ MonoBehaviour:
   m_completeCondition: 0
   m_sceneStepSet:
   - {fileID: 1093196170}
-  - {fileID: 1225823290}
-  - {fileID: 878860112}
-  - {fileID: 1963243347}
-  - {fileID: 2128106975}
 --- !u!1001 &1386489005
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10569,6 +10790,76 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 4c7ade263b336f5458ff1073de0ad86c, type: 3}
   m_PrefabInstance: {fileID: 1524516776}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1535171321
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1535171322}
+  - component: {fileID: 1535171323}
+  m_Layer: 0
+  m_Name: "Step7-\u62D6\u9632\u62A4\u88C5\u5907"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1535171322
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1535171321}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2009624719}
+  - {fileID: 1754688110}
+  m_Father: {fileID: 1600540341}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1535171323
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1535171321}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c1930931cd14e3eb333521cf661e578, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_stepId: 7
+  m_stepName: "\u8FDB\u51653\u533A"
+  m_isDisplayStep: 1
+  sceneZoneTypeId: 0
+  m_stepMessage: 
+  m_stepMessageColor: {r: 1, g: 1, b: 1, a: 1}
+  m_beforeStepStartActiveSet: []
+  m_stepStartActiveSet: []
+  m_stepEndActiveSet: []
+  m_stepEndInactive: 1
+  m_onStepStart:
+    m_PersistentCalls:
+      m_Calls: []
+  m_onStepReset:
+    m_PersistentCalls:
+      m_Calls: []
+  m_onStepEnd:
+    m_PersistentCalls:
+      m_Calls: []
+  m_compositeType: 0
+  m_completeCondition: 0
+  m_sceneStepSet:
+  - {fileID: 2009624720}
+  - {fileID: 1754688111}
 --- !u!64 &1559578218
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -10630,6 +10921,8 @@ Transform:
   - {fileID: 1630685582}
   - {fileID: 1205245573}
   - {fileID: 1386224513}
+  - {fileID: 1535171322}
+  - {fileID: 1072457736}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1600540342
@@ -10655,6 +10948,10 @@ MonoBehaviour:
   m_playOnStart: 1
   m_firstStepId: 1
   m_isAutoNextStep: 1
+  safeZoneSpawnPoint: {fileID: 0}
+  prepareZoneSpawnPoint: {fileID: 0}
+  currentStepZoneID: 0
+  door: {fileID: 1844989965}
   m_notifyDataSet:
   - NotifyType: 0
     Id: "\u5300\u901F\u4E0B\u538B\uFF0C\u76F4\u5230\u542C\u5230\u201D\u5494\u54D2\u201C\u58F0"
@@ -10759,11 +11056,17 @@ MonoBehaviour:
   m_stepId: 5
   m_stepName: "\u52A0\u6837"
   m_isDisplayStep: 1
+  sceneZoneTypeId: 1
   m_stepMessage: 
   m_stepMessageColor: {r: 1, g: 1, b: 1, a: 1}
+  m_beforeStepStartActiveSet: []
   m_stepStartActiveSet: []
+  m_stepEndActiveSet: []
   m_stepEndInactive: 1
   m_onStepStart:
+    m_PersistentCalls:
+      m_Calls: []
+  m_onStepReset:
     m_PersistentCalls:
       m_Calls: []
   m_onStepEnd:
@@ -11115,11 +11418,17 @@ MonoBehaviour:
   m_stepId: 
   m_stepName: "\u653E\u7F6E\u6837\u672C"
   m_isDisplayStep: 1
+  sceneZoneTypeId: 0
   m_stepMessage: "\u5173\u95ED2-3\u533A\u4F20\u9012\u7A97\u7684\u95E8"
   m_stepMessageColor: {r: 1, g: 1, b: 1, a: 1}
+  m_beforeStepStartActiveSet: []
   m_stepStartActiveSet: []
+  m_stepEndActiveSet: []
   m_stepEndInactive: 1
   m_onStepStart:
+    m_PersistentCalls:
+      m_Calls: []
+  m_onStepReset:
     m_PersistentCalls:
       m_Calls: []
   m_onStepEnd:
@@ -11226,6 +11535,119 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1723870662}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1754688109
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1754688110}
+  - component: {fileID: 1754688111}
+  m_Layer: 0
+  m_Name: "\u8131\u9632\u62A4\u670D"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1754688110
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1754688109}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1535171322}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1754688111
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1754688109}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b29556f05c1d477da2be87539162ca95, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_stepId: 
+  m_stepName: "\u8131\u4E2A\u4EBA\u9632\u62A4\u88C5\u5907"
+  m_isDisplayStep: 1
+  sceneZoneTypeId: 0
+  m_stepMessage: 
+  m_stepMessageColor: {r: 1, g: 1, b: 1, a: 1}
+  m_beforeStepStartActiveSet: []
+  m_stepStartActiveSet: []
+  m_stepEndActiveSet: []
+  m_stepEndInactive: 1
+  m_onStepStart:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 445486658}
+        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
+        m_MethodName: SetMovable
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 445486658}
+        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
+        m_MethodName: SetRotate
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_onStepReset:
+    m_PersistentCalls:
+      m_Calls: []
+  m_onStepEnd:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 445486658}
+        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
+        m_MethodName: SetMovable
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 445486658}
+        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
+        m_MethodName: SetRotate
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+  m_quizBankData: {fileID: 11400000, guid: 3f3c86d1277ed3441bd52653e6dfd45d, type: 2}
+  m_questionId: Scene2Unequip
 --- !u!1001 &1772677793
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11437,7 +11859,7 @@ GameObject:
   - component: {fileID: 1796310299}
   - component: {fileID: 1796310300}
   m_Layer: 0
-  m_Name: "Step4-\u62FF\u53D6PCR\u53CD\u5E94\u4F53\u7CFB"
+  m_Name: "Step4-\u4ECE\u4F20\u9012\u7A97\u53D6\u51FA PCR \u53CD\u5E94\u4F53\u7CFB"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11475,13 +11897,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_stepId: 4
-  m_stepName: "\u62FF\u53D6PCR\u53CD\u5E94\u4F53\u7CFB"
+  m_stepName: "\u4ECE\u4F20\u9012\u7A97\u53D6\u51FA PCR \u53CD\u5E94\u4F53\u7CFB"
   m_isDisplayStep: 1
+  sceneZoneTypeId: 1
   m_stepMessage: 
   m_stepMessageColor: {r: 1, g: 1, b: 1, a: 1}
+  m_beforeStepStartActiveSet:
+  - Target: {fileID: 787834206}
+    Active: 1
+  - Target: {fileID: 1426787254}
+    Active: 0
   m_stepStartActiveSet: []
+  m_stepEndActiveSet:
+  - Target: {fileID: 787834206}
+    Active: 0
+  - Target: {fileID: 1426787254}
+    Active: 1
   m_stepEndInactive: 1
   m_onStepStart:
+    m_PersistentCalls:
+      m_Calls: []
+  m_onStepReset:
     m_PersistentCalls:
       m_Calls: []
   m_onStepEnd:
@@ -11913,11 +12349,17 @@ MonoBehaviour:
   m_stepId: 4
   m_stepName: "\u62FF\u53D6PCR\u53CD\u5E94\u4F53\u7CFB"
   m_isDisplayStep: 1
+  sceneZoneTypeId: 0
   m_stepMessage: "\u5173\u95ED1-2\u533A\u4F20\u9012\u7A97\u7684\u95E8"
   m_stepMessageColor: {r: 1, g: 1, b: 1, a: 1}
+  m_beforeStepStartActiveSet: []
   m_stepStartActiveSet: []
+  m_stepEndActiveSet: []
   m_stepEndInactive: 1
   m_onStepStart:
+    m_PersistentCalls:
+      m_Calls: []
+  m_onStepReset:
     m_PersistentCalls:
       m_Calls: []
   m_onStepEnd:
@@ -11957,6 +12399,70 @@ PrefabInstance:
     - target: {fileID: 1456152616003882327, guid: bd0b32aa6b4ee11489ef757e575972a3, type: 3}
       propertyPath: m_content
       value: INTERACT
+      objectReference: {fileID: 0}
+    - target: {fileID: 1456152616003882327, guid: bd0b32aa6b4ee11489ef757e575972a3, type: 3}
+      propertyPath: m_doorOpen.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1456152616003882327, guid: bd0b32aa6b4ee11489ef757e575972a3, type: 3}
+      propertyPath: m_doorClose.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1456152616003882327, guid: bd0b32aa6b4ee11489ef757e575972a3, type: 3}
+      propertyPath: m_doorOpen.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1456152616003882327, guid: bd0b32aa6b4ee11489ef757e575972a3, type: 3}
+      propertyPath: m_doorClose.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1456152616003882327, guid: bd0b32aa6b4ee11489ef757e575972a3, type: 3}
+      propertyPath: m_doorOpen.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 589951817}
+    - target: {fileID: 1456152616003882327, guid: bd0b32aa6b4ee11489ef757e575972a3, type: 3}
+      propertyPath: m_doorClose.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 589951817}
+    - target: {fileID: 1456152616003882327, guid: bd0b32aa6b4ee11489ef757e575972a3, type: 3}
+      propertyPath: m_doorOpen.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1456152616003882327, guid: bd0b32aa6b4ee11489ef757e575972a3, type: 3}
+      propertyPath: m_doorClose.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1456152616003882327, guid: bd0b32aa6b4ee11489ef757e575972a3, type: 3}
+      propertyPath: m_doorOpen.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: CrossFade
+      objectReference: {fileID: 0}
+    - target: {fileID: 1456152616003882327, guid: bd0b32aa6b4ee11489ef757e575972a3, type: 3}
+      propertyPath: m_doorClose.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: CrossFade
+      objectReference: {fileID: 0}
+    - target: {fileID: 1456152616003882327, guid: bd0b32aa6b4ee11489ef757e575972a3, type: 3}
+      propertyPath: m_doorOpen.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UnityEngine.Animation, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1456152616003882327, guid: bd0b32aa6b4ee11489ef757e575972a3, type: 3}
+      propertyPath: m_doorClose.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UnityEngine.Animation, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1456152616003882327, guid: bd0b32aa6b4ee11489ef757e575972a3, type: 3}
+      propertyPath: m_doorOpen.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: "\u573A\u666F2-\u5F00\u95E8"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1456152616003882327, guid: bd0b32aa6b4ee11489ef757e575972a3, type: 3}
+      propertyPath: m_doorClose.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: "\u573A\u666F2-\u5173\u95E8"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1456152616003882327, guid: bd0b32aa6b4ee11489ef757e575972a3, type: 3}
+      propertyPath: m_doorOpen.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1456152616003882327, guid: bd0b32aa6b4ee11489ef757e575972a3, type: 3}
+      propertyPath: m_doorClose.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 8187721790818886806, guid: bd0b32aa6b4ee11489ef757e575972a3, type: 3}
       propertyPath: m_LocalScale.x
@@ -12196,11 +12702,17 @@ MonoBehaviour:
   m_stepId: 
   m_stepName: "\u7B49\u5F85\u63D0\u53D6"
   m_isDisplayStep: 0
+  sceneZoneTypeId: 0
   m_stepMessage: "\u7B49\u5F8520\u523030\u5206\u949F\uFF0C\u6838\u9178\u63D0\u53D6\u7A0B\u5E8F\u5B8C\u6210"
   m_stepMessageColor: {r: 1, g: 1, b: 1, a: 1}
+  m_beforeStepStartActiveSet: []
   m_stepStartActiveSet: []
+  m_stepEndActiveSet: []
   m_stepEndInactive: 1
   m_onStepStart:
+    m_PersistentCalls:
+      m_Calls: []
+  m_onStepReset:
     m_PersistentCalls:
       m_Calls: []
   m_onStepEnd:
@@ -12498,90 +13010,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1950983566}
   m_Mesh: {fileID: -763569034553513992, guid: b14f0d8af4ea00049ad6ea21ab3ecb84, type: 3}
---- !u!1 &1963243345
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1963243346}
-  - component: {fileID: 1963243347}
-  m_Layer: 0
-  m_Name: "\u4EA4\u4E92-\u5207\u6362\u573A\u666F"
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1963243346
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1963243345}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1386224513}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1963243347
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1963243345}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 08d308ac00e845a582daa3326e71d5d2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_stepId: 
-  m_stepName: "\u64E6\u62ED"
-  m_isDisplayStep: 1
-  m_stepMessage: "\u524D\u5F803\u533A"
-  m_stepMessageColor: {r: 1, g: 1, b: 1, a: 1}
-  m_stepStartActiveSet: []
-  m_stepEndInactive: 1
-  m_onStepStart:
-    m_PersistentCalls:
-      m_Calls: []
-  m_onStepEnd:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 445486658}
-        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
-        m_MethodName: SetMovable
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 445486658}
-        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
-        m_MethodName: SetRotate
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  m_interactive: {fileID: 1426612065}
-  m_interactiveContent: "\u5F00\u95E8"
-  m_stepEndDisableInteractive: 1
 --- !u!1 &1974834023
 GameObject:
   m_ObjectHideFlags: 0
@@ -12886,6 +13314,84 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2004278582}
   m_Mesh: {fileID: -763569034553513992, guid: b14f0d8af4ea00049ad6ea21ab3ecb84, type: 3}
+--- !u!1 &2009624718
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2009624719}
+  - component: {fileID: 2009624720}
+  m_Layer: 0
+  m_Name: "\u4EA4\u4E92-\u8131\u9632\u62A4\u670D"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2009624719
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2009624718}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1535171322}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2009624720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2009624718}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08d308ac00e845a582daa3326e71d5d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_stepId: 
+  m_stepName: "\u64E6\u62ED"
+  m_isDisplayStep: 1
+  sceneZoneTypeId: 0
+  m_stepMessage: "\u8131\u6389\u9632\u62A4\u670D"
+  m_stepMessageColor: {r: 1, g: 1, b: 1, a: 1}
+  m_beforeStepStartActiveSet: []
+  m_stepStartActiveSet: []
+  m_stepEndActiveSet: []
+  m_stepEndInactive: 1
+  m_onStepStart:
+    m_PersistentCalls:
+      m_Calls: []
+  m_onStepReset:
+    m_PersistentCalls:
+      m_Calls: []
+  m_onStepEnd:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 589951817}
+        m_TargetAssemblyTypeName: UnityEngine.Animation, UnityEngine
+        m_MethodName: CrossFade
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: "\u573A\u666F2-\u5173\u95E8"
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_interactive: {fileID: 459991158}
+  m_interactiveContent: "\u8131\u9632\u62A4\u670D"
+  m_stepEndDisableInteractive: 1
 --- !u!1001 &2019168765
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13409,72 +13915,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2112074826}
   m_Mesh: {fileID: -763569034553513992, guid: b14f0d8af4ea00049ad6ea21ab3ecb84, type: 3}
---- !u!1 &2128106973
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2128106974}
-  - component: {fileID: 2128106975}
-  m_Layer: 0
-  m_Name: "\u5207\u6362\u573A\u666F"
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2128106974
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2128106973}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1386224513}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2128106975
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2128106973}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef4cb6d8fc854301845692064fcfafc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_stepId: 
-  m_stepName: "\u5207\u6362\u573A\u666F"
-  m_isDisplayStep: 0
-  m_stepMessage: 
-  m_stepMessageColor: {r: 1, g: 1, b: 1, a: 1}
-  m_stepStartActiveSet: []
-  m_stepEndInactive: 1
-  m_onStepStart:
-    m_PersistentCalls:
-      m_Calls: []
-  m_onStepEnd:
-    m_PersistentCalls:
-      m_Calls: []
-  m_sceneName: Scene3
-  m_fadeInDuration: 2
-  m_fadeOutDuration: 1
-  m_fadeInCompleteEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_sceneLoadedCompleteEvent:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

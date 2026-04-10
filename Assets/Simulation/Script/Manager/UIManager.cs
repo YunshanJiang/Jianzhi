@@ -248,6 +248,19 @@ namespace Starscape.Simulation
                 m_warningCanvasGroup.gameObject.SetActive(false);
             });
         }
+
+        /// <summary>
+        /// 立即关闭警告条（与 <see cref="Warning"/> 配对使用）
+        /// </summary>
+        public void HideWarning()
+        {
+            if (m_warningTween != null && m_warningTween.IsActive())
+            {
+                m_warningTween.Kill();
+            }
+            m_warningCanvasGroup.alpha = 0;
+            m_warningCanvasGroup.gameObject.SetActive(false);
+        }
 #endregion
 
 

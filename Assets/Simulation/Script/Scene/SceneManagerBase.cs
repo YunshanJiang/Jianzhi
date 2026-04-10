@@ -226,6 +226,8 @@ namespace Starscape.Simulation
                 CurrentStep = null;
             }
 
+            ApplyJumpStepActiveState(_step);
+
             StartStep(_step);
             return true;
         }
@@ -303,6 +305,47 @@ namespace Starscape.Simulation
             }
             _nextStep = m_sceneStepSet[nextIndex];
             return GetNextStepResult.Success;
+        }
+
+        private void ApplyJumpStepActiveState(SceneStepBase _targetStep)
+        {
+            if(CurrentStep == _targetStep)
+            {
+                return;
+            }
+            if (_targetStep == null || m_sceneStepSet == null || m_sceneStepSet.Count == 0)
+            {
+                return;
+            }
+
+            var targetIndex = m_sceneStepSet.FindIndex(_item => _item == _targetStep);
+            if (targetIndex == -1)
+            {
+                targetIndex = m_sceneStepSet.FindIndex(_item => _item != null && _item.StepId == _targetStep.StepId);
+            }
+            if (targetIndex == -1)
+            {
+                Debug.LogWarning($"目标步骤未在步骤列表中找到，跳转状态同步已跳过: {_targetStep.StepId}");
+                return;
+            }
+
+            for (var i = 0; i < m_sceneStepSet.Count; i++)
+            {
+                var step = m_sceneStepSet[i];
+                if (step == null )
+                {
+                    continue;
+                }
+
+                if (i < targetIndex)
+                {
+                    step.ApplyStepEndActiveSet();
+                }
+                else
+                {
+                    step.ApplyBeforeStepStartActiveSet();
+                }
+            }
         }
 
         /// <summary>
@@ -461,6 +504,9 @@ namespace Starscape.Simulation
         [SerializeField]
         private List<NotifyData> m_notifyDataSet;
 
+        /// <summary>配置项 Id → <see cref="UIManager.Notify"/> 返回的运行时 id（用于按 Id 关闭）</summary>
+        private readonly Dictionary<string, int> m_notifyRuntimeIdByDataId = new();
+
         public void Notify(string _id)
         {
             var index = m_notifyDataSet.FindIndex(_item => _item.Id == _id);
@@ -475,7 +521,43 @@ namespace Starscape.Simulation
             }
             else if (data.NotifyType == NotifyData.Type.Notify)
             {
-                GameManager.Instance.UIManager.Notify(data.Message, Color.white, data.Duration);
+                if (m_notifyRuntimeIdByDataId.TryGetValue(_id, out var oldRuntimeId))
+                {
+                    GameManager.Instance.UIManager.HideNotify(oldRuntimeId);
+                }
+                Debug.Log(_id);
+                var runtimeId = GameManager.Instance.UIManager.Notify(data.Message, Color.white, data.Duration);
+                m_notifyRuntimeIdByDataId[_id] = runtimeId;
+            }
+        }
+
+        /// <summary>
+        /// 按配置项 Id 关闭对应通知（普通 Notify 用运行时 id；Warning 则关闭警告条）
+        /// </summary>
+        public void HideNotify(string _id)
+        {
+            if (string.IsNullOrEmpty(_id))
+            {
+                return;
+            }
+            var index = m_notifyDataSet.FindIndex(_item => _item.Id == _id);
+            if (index == -1)
+            {
+                return;
+            }
+            var data = m_notifyDataSet[index];
+            if (data.NotifyType == NotifyData.Type.Warning)
+            {
+                GameManager.Instance.UIManager.HideWarning();
+            }
+            else if (data.NotifyType == NotifyData.Type.Notify)
+            {
+                if (m_notifyRuntimeIdByDataId.TryGetValue(_id, out var runtimeId))
+                {
+                    
+                    GameManager.Instance.UIManager.HideNotify(runtimeId);
+                    m_notifyRuntimeIdByDataId.Remove(_id);
+                }
             }
         }
 #endregion
