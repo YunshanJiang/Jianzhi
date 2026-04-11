@@ -38,6 +38,7 @@ namespace Starscape.Simulation
         {
             base.OnStepReset();
             StepEnd();
+            GameManager.Instance.UIManager.CountDownProgress.Hide();
             m_timer = 0;
         }
 

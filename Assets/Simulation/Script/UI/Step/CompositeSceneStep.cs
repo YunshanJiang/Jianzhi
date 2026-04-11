@@ -60,10 +60,11 @@ namespace Starscape.Simulation
 
         protected override void OnStepEnd()
         {
+            CancelPendingWork();
             base.OnStepEnd();
             //CancelRunningChildren();
             //CleanupChildren();
-            CancelPendingWork();
+           
         }
 
         protected override void OnStepReset()

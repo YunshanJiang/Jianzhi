@@ -181,7 +181,10 @@ namespace Starscape.Simulation
         {
             if (m_notifyCenter.childCount > 0)
             {
-                Destroy(m_notifyCenter.GetChild(0).gameObject);
+                var oldGo = m_notifyCenter.GetChild(0).gameObject;
+                var oldUi = oldGo.GetComponent<NotifyUI>();
+                RemoveNotifyMapEntriesFor(oldUi);
+                Destroy(oldGo);
             }
             var notifyObj = Instantiate(m_notifyPrefab, m_notifyCenter);
             var notifyUI = notifyObj.GetComponent<NotifyUI>();
@@ -197,11 +200,39 @@ namespace Starscape.Simulation
         /// <param name="_id">ID</param>
         public void HideNotify(int _id)
         {
-           
             if (m_notifyMap.TryGetValue(_id, out var notifyUI))
             {
-                notifyUI.Hide();
+                if (notifyUI != null)
+                {
+                    notifyUI.Hide();
+                }
+
                 m_notifyMap.Remove(_id);
+            }
+        }
+
+        /// <summary>
+        /// 从映射中移除指向指定实例的条目（例如居中通知被新通知替换时已 Destroy 但 id 仍留在表中）。
+        /// </summary>
+        private void RemoveNotifyMapEntriesFor(NotifyUI _ui)
+        {
+            if (_ui == null)
+            {
+                return;
+            }
+
+            var toRemove = new List<int>();
+            foreach (var kv in m_notifyMap)
+            {
+                if (kv.Value == _ui)
+                {
+                    toRemove.Add(kv.Key);
+                }
+            }
+
+            for (var i = 0; i < toRemove.Count; i++)
+            {
+                m_notifyMap.Remove(toRemove[i]);
             }
         }
 

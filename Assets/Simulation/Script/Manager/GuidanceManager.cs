@@ -1,6 +1,7 @@
-﻿using System.Collections.Generic;
-using Sirenix.OdinInspector;
+﻿using Sirenix.OdinInspector;
+using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering;
 
 namespace Starscape.Simulation
 {
@@ -21,6 +22,7 @@ namespace Starscape.Simulation
         [TitleGroup("运行时")]
         [ShowInInspector][ReadOnly]
         public GuidanceStepBase CurrentStep { get; private set; }
+        public GuidanceStepBase EndStep { get; private set; }
         [TitleGroup("运行时")]
         [ShowInInspector][ReadOnly]
         private bool m_hasStarted;
@@ -74,9 +76,10 @@ namespace Starscape.Simulation
             return step;
         }
 
-        public void StartStep(string _id)
+        public void StartStep(string _id, string _endId = null)
         {
             var step = FindStepById(_id);
+            var endStep = FindStepById(_endId);
             if (step == null)
             {
                 return;
@@ -86,6 +89,7 @@ namespace Starscape.Simulation
             m_hasStarted = true;
             OnStarted?.Invoke(step);
             SetCurrentStep(step);
+            SetEndStep(endStep);
         }
 
         public GuidanceStepBase FindNextStep(GuidanceStepBase _step)
@@ -112,7 +116,7 @@ namespace Starscape.Simulation
 
         public void NextStep(GuidanceStepBase _nextStep)
         {
-            if (_nextStep == null)
+            if (_nextStep == null || _nextStep == EndStep)
             {
                 CompleteSequence();
                 return;
@@ -163,6 +167,11 @@ namespace Starscape.Simulation
             CurrentStep = _step;
             CurrentStep?.StartStep();
             OnStepChanged?.Invoke(CurrentStep);
+        }
+        private void SetEndStep(GuidanceStepBase _step)
+        {
+            EndStep = _step;
+
         }
 
         private void CompleteSequence()

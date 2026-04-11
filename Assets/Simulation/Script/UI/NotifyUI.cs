@@ -119,6 +119,11 @@ namespace Starscape.Simulation
 
         public void Hide()
         {
+            if (!this)
+            {
+                return;
+            }
+
             CancelInvoke(nameof(Fadeout));
             Fadeout();
         }

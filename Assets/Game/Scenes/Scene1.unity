@@ -2219,18 +2219,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 647140543}
-        m_TargetAssemblyTypeName: UnityEngine.Animation, UnityEngine
-        m_MethodName: CrossFade
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: "\u573A\u666F1-\u5173\u95E8"
-          m_BoolArgument: 0
-        m_CallState: 2
   m_interactive: {fileID: 1025926235}
   m_interactiveContent: "\u4F7F\u7528"
   m_stepEndDisableInteractive: 1
@@ -3410,6 +3398,10 @@ PrefabInstance:
     - target: {fileID: 68430425643441513, guid: f3b2c0493bc49fd419516e9e1f26db4d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2376540936296500992, guid: f3b2c0493bc49fd419516e9e1f26db4d, type: 3}
+      propertyPath: m_cameraRotationSpeed
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5537602952450040293, guid: f3b2c0493bc49fd419516e9e1f26db4d, type: 3}
       propertyPath: m_Name
@@ -4823,11 +4815,23 @@ MonoBehaviour:
   sceneZoneTypeId: 1
   m_stepMessage: 
   m_stepMessageColor: {r: 1, g: 1, b: 1, a: 1}
-  m_beforeStepStartActiveSet: []
+  m_beforeStepStartActiveSet:
+  - Target: {fileID: 2049790688}
+    Active: 0
+  - Target: {fileID: 1950933867}
+    Active: 1
+  - Target: {fileID: 1504553673}
+    Active: 0
   m_stepStartActiveSet:
   - {fileID: 2069670892}
   - {fileID: 1504553673}
-  m_stepEndActiveSet: []
+  m_stepEndActiveSet:
+  - Target: {fileID: 1504553673}
+    Active: 0
+  - Target: {fileID: 1950933867}
+    Active: 0
+  - Target: {fileID: 2049790688}
+    Active: 0
   m_stepEndInactive: 1
   m_onStepStart:
     m_PersistentCalls:
@@ -4837,7 +4841,43 @@ MonoBehaviour:
       m_Calls: []
   m_onStepEnd:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 335553105}
+        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
+        m_MethodName: SetMovable
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 335553105}
+        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
+        m_MethodName: SetRotate
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 2049790690}
+        m_TargetAssemblyTypeName: EraseRevealController, Assembly-CSharp
+        m_MethodName: SetEraseable
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_compositeType: 0
   m_completeCondition: 0
   m_sceneStepSet:
@@ -5160,20 +5200,8 @@ MonoBehaviour:
       m_Calls: []
   m_onStepEnd:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 647140543}
-        m_TargetAssemblyTypeName: UnityEngine.Animation, UnityEngine
-        m_MethodName: CrossFade
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: "\u573A\u666F1-\u5F00\u95E8"
-          m_BoolArgument: 0
-        m_CallState: 2
-  m_interactive: {fileID: 869556673}
+      m_Calls: []
+  m_interactive: {fileID: 869556675}
   m_interactiveContent: "\u5F00\u95E8"
   m_stepEndDisableInteractive: 1
 --- !u!1 &531840361
@@ -5259,7 +5287,19 @@ MonoBehaviour:
         m_CallState: 2
   m_onStepReset:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1959028849}
+        m_TargetAssemblyTypeName: Game.SceneManager1, Assembly-CSharp
+        m_MethodName: HideNotify
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: "\u52A0\u91CF\u6CE8\u610F"
+          m_BoolArgument: 0
+        m_CallState: 2
   m_onStepEnd:
     m_PersistentCalls:
       m_Calls:
@@ -5606,7 +5646,7 @@ MonoBehaviour:
   m_onStepEnd:
     m_PersistentCalls:
       m_Calls: []
-  m_interactive: {fileID: 869556673}
+  m_interactive: {fileID: 869556675}
   m_interactiveContent: "\u5F00\u95E8"
   m_stepEndDisableInteractive: 1
 --- !u!1001 &563012772
@@ -6813,6 +6853,73 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: f7e27b05245450647a9e4d39128c9d69, type: 3}
   m_PrefabInstance: {fileID: 672738298}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &682098209
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 682098212}
+  - component: {fileID: 682098211}
+  - component: {fileID: 682098210}
+  m_Layer: 0
+  m_Name: "\u5B9E\u9A8C\u5BA4\u68C0\u6D4B\u7A7A\u95F4"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &682098210
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 682098209}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03bbf088df075d642ba0cd9165ceb1d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_targetTag: Player
+--- !u!65 &682098211
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 682098209}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 4.05, y: 2.09, z: 7}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!4 &682098212
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 682098209}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -7.803, y: 1.184, z: -6.747}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &708528916
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8400,27 +8507,83 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1456152616003882327, guid: bd0b32aa6b4ee11489ef757e575972a3, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 89402161834343762, guid: bd0b32aa6b4ee11489ef757e575972a3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 869556675}
   m_SourcePrefab: {fileID: 100100000, guid: bd0b32aa6b4ee11489ef757e575972a3, type: 3}
 --- !u!4 &869556672 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8187721790818886806, guid: bd0b32aa6b4ee11489ef757e575972a3, type: 3}
   m_PrefabInstance: {fileID: 869556671}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &869556673 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1456152616003882327, guid: bd0b32aa6b4ee11489ef757e575972a3, type: 3}
+--- !u!4 &869556673 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8664618688575707690, guid: bd0b32aa6b4ee11489ef757e575972a3, type: 3}
   m_PrefabInstance: {fileID: 869556671}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+--- !u!1 &869556674 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 89402161834343762, guid: bd0b32aa6b4ee11489ef757e575972a3, type: 3}
+  m_PrefabInstance: {fileID: 869556671}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &869556675
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 869556674}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b3a2db4878c49aaafee6b8e7a23573c, type: 3}
+  m_Script: {fileID: 11500000, guid: e6df8baf1e1e20d4e878d41370f72d59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_canInteract: 1
+  m_content: INTERACT
+  m_interactAction: {fileID: 1781555164194001046, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+  m_promptPosition: {fileID: 869556673}
+  m_locationTip: 1
+  m_indicatorDistance: 100
+  m_onInteract:
+    m_PersistentCalls:
+      m_Calls: []
+  m_targetTag: Player
+  m_doorClose:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 647140543}
+        m_TargetAssemblyTypeName: UnityEngine.Animation, UnityEngine
+        m_MethodName: CrossFade
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: "\u573A\u666F1-\u5173\u95E8"
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_doorOpen:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 647140543}
+        m_TargetAssemblyTypeName: UnityEngine.Animation, UnityEngine
+        m_MethodName: CrossFade
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: "\u573A\u666F1-\u5F00\u95E8"
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_isDoorOpen: 0
 --- !u!1 &878720685
 GameObject:
   m_ObjectHideFlags: 0
@@ -11434,7 +11597,19 @@ MonoBehaviour:
         m_CallState: 2
   m_onStepReset:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1959028849}
+        m_TargetAssemblyTypeName: Game.SceneManager1, Assembly-CSharp
+        m_MethodName: HideNotify
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: "\u7528\u624B\u538B\u7D275s"
+          m_BoolArgument: 0
+        m_CallState: 2
   m_onStepEnd:
     m_PersistentCalls:
       m_Calls:
@@ -11544,7 +11719,19 @@ MonoBehaviour:
       m_Calls: []
   m_onStepReset:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 289508154}
+        m_TargetAssemblyTypeName: UnityEngine.Animation, UnityEngine
+        m_MethodName: CrossFade
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: "\u573A\u666F1-\u4F20\u9001\u533A\u5173\u95E8"
+          m_BoolArgument: 1
+        m_CallState: 2
   m_onStepEnd:
     m_PersistentCalls:
       m_Calls:
@@ -12088,8 +12275,6 @@ MonoBehaviour:
     Active: 1
   - Target: {fileID: 716857386}
     Active: 0
-  - Target: {fileID: 1300088891}
-    Active: 1
   - Target: {fileID: 788301072}
     Active: 0
   m_stepStartActiveSet: []
@@ -12604,7 +12789,19 @@ MonoBehaviour:
         m_CallState: 2
   m_onStepReset:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1959028849}
+        m_TargetAssemblyTypeName: Game.SceneManager1, Assembly-CSharp
+        m_MethodName: HideNotify
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: "\u7528\u624B\u538B\u7D2710s"
+          m_BoolArgument: 0
+        m_CallState: 2
   m_onStepEnd:
     m_PersistentCalls:
       m_Calls:
@@ -15080,7 +15277,19 @@ MonoBehaviour:
       m_Calls: []
   m_onStepReset:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 289508154}
+        m_TargetAssemblyTypeName: UnityEngine.Animation, UnityEngine
+        m_MethodName: CrossFade
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: "\u573A\u666F1-\u4F20\u9001\u533A\u5173\u95E8"
+          m_BoolArgument: 1
+        m_CallState: 2
   m_onStepEnd:
     m_PersistentCalls:
       m_Calls:
@@ -15752,19 +15961,7 @@ MonoBehaviour:
       m_Calls: []
   m_onStepEnd:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 647140543}
-        m_TargetAssemblyTypeName: UnityEngine.Animation, UnityEngine
-        m_MethodName: CrossFade
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: "\u573A\u666F1-\u5173\u95E8"
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   m_interactive: {fileID: 1534771278}
   m_interactiveContent: "\u8131\u9632\u62A4\u670D"
   m_stepEndDisableInteractive: 1
@@ -16554,16 +16751,40 @@ MonoBehaviour:
   m_onStepReset:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1959028852}
-        m_TargetAssemblyTypeName: Starscape.Simulation.ViewController, Assembly-CSharp
-        m_MethodName: InactiveViewControl
+      - m_Target: {fileID: 1959028849}
+        m_TargetAssemblyTypeName: Game.SceneManager1, Assembly-CSharp
+        m_MethodName: HideNotify
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: "\u5206\u88C5"
+          m_StringArgument: "\u6BCF\u5B5420\u03BCL\uFF0C\u4F9D\u6B21\u52A0\u5165"
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1959028849}
+        m_TargetAssemblyTypeName: Game.SceneManager1, Assembly-CSharp
+        m_MethodName: HideNotify
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: "\u5300\u901F\u4E0B\u538B\uFF0C\u76F4\u5230\u542C\u5230\u201D\u5494\u54D2\u201C\u58F0"
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1959028849}
+        m_TargetAssemblyTypeName: Game.SceneManager1, Assembly-CSharp
+        m_MethodName: HideNotify
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: "\u76D6\u4E0A\u76D6\u5B50"
           m_BoolArgument: 0
         m_CallState: 2
   m_onStepEnd:
@@ -16969,7 +17190,19 @@ MonoBehaviour:
       m_Calls: []
   m_onStepEnd:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1959028852}
+        m_TargetAssemblyTypeName: Starscape.Simulation.ViewController, Assembly-CSharp
+        m_MethodName: InactiveViewControl
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: "\u5206\u88C5"
+          m_BoolArgument: 0
+        m_CallState: 2
   m_compositeType: 0
   m_completeCondition: 0
   m_sceneStepSet:
@@ -18263,7 +18496,19 @@ MonoBehaviour:
       m_Calls: []
   m_onStepEnd:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1959028852}
+        m_TargetAssemblyTypeName: Starscape.Simulation.CameraManager, Assembly-CSharp
+        m_MethodName: InactiveViewControl
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: "\u914D\u5236"
+          m_BoolArgument: 0
+        m_CallState: 2
   m_compositeType: 0
   m_completeCondition: 0
   m_sceneStepSet:
@@ -18935,9 +19180,11 @@ MonoBehaviour:
   m_firstStepId: -1
   m_isAutoNextStep: 1
   safeZoneSpawnPoint: {fileID: 1507119953}
-  prepareZoneSpawnPoint: {fileID: 0}
+  prepareZoneSpawnPoint: {fileID: 1522841071}
   currentStepZoneID: 0
-  door: {fileID: 1534771278}
+  isJumpToAfterStep: 0
+  isStepJumped: 0
+  door: {fileID: 869556675}
   m_notifyDataSet:
   - NotifyType: 0
     Id: "RT-PCR\u7F13\u51B2\u6DB212\u03BCL"
@@ -21488,6 +21735,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1645842854203970608, guid: 5d2610d3df3156043a35e47d4e6f5827, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -21.82666
+      objectReference: {fileID: 0}
+    - target: {fileID: 1645842854203970608, guid: 5d2610d3df3156043a35e47d4e6f5827, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 78.57666
+      objectReference: {fileID: 0}
     - target: {fileID: 2088819279687400325, guid: 5d2610d3df3156043a35e47d4e6f5827, type: 3}
       propertyPath: m_Name
       value: Manager
@@ -21513,3 +21768,4 @@ SceneRoots:
   - {fileID: 467206512}
   - {fileID: 1373640312}
   - {fileID: 1930790329}
+  - {fileID: 682098212}

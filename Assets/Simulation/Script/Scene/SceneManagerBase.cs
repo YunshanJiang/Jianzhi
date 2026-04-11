@@ -74,7 +74,9 @@ namespace Starscape.Simulation
         public Transform prepareZoneSpawnPoint;
         //当前step的zoneID的值
         public int currentStepZoneID;
-        public PhysicsColliderInteractive door;
+        public bool isJumpToAfterStep;
+        public bool isStepJumped;
+        public DoorPhysicsColliderInteractive door;
         /// <summary>
         /// 开始步骤
         /// </summary>
@@ -138,6 +140,13 @@ namespace Starscape.Simulation
         /// <returns></returns>
         public bool NextStep([CanBeNull] string _stepId = null, bool _isForce = false)
         {
+            //如果正在跳跃step，则不执行自动切换到下一个step的逻辑，避免和跳跃step的逻辑冲突
+            if (isStepJumped)
+            {
+               
+                return false; 
+            }
+            
             if (CurrentStep == null)
             {
                 StepStart(_stepId);
@@ -215,10 +224,16 @@ namespace Starscape.Simulation
 
                 // 先解绑，避免 StepEnd 触发自动 NextStep 干扰跳转。
                 CurrentStep.OnStepStartEvent -= OStepStart;
+               
                 CurrentStep.OnStepEndEvent -= OnStepEnd;
 
                 if (CurrentStep.IsRunning)
                 {
+                    var currentIndex = m_sceneStepSet.FindIndex(_item => _item == CurrentStep);
+                    var targetIndex = m_sceneStepSet.FindIndex(_item => _item == _step);
+                    isJumpToAfterStep = targetIndex > currentIndex;
+                    //将是否在跳跃step设置为有
+                    isStepJumped = true;
                     Debug.Log($"结束步骤[{CurrentStep.StepName}]: {CurrentStep.StepId}");
                     CurrentStep.StepEnd();
                 }
@@ -228,7 +243,9 @@ namespace Starscape.Simulation
 
             ApplyJumpStepActiveState(_step);
 
-            StartStep(_step);
+            StartStep(_step, true);
+            //将是否在跳跃step设置为没有
+            isStepJumped = false;
             return true;
         }
 
@@ -249,7 +266,7 @@ namespace Starscape.Simulation
             return JumpToStep(step, _isForce);
         }
 
-        protected void StartStep(SceneStepBase _step)
+        protected void StartStep(SceneStepBase _step, bool isJumpStep = false)
         {
             if (_step == null)
             {
@@ -259,12 +276,47 @@ namespace Starscape.Simulation
             Debug.Log($"开始步骤[{_step.StepName}]: {_step.StepId}");
             _step.StepStart();
 
-            //door在不同zone之间切换时才开门
-            if (currentStepZoneID != _step.sceneZoneTypeId)
+            if (door != null)
             {
-                door.PlayDoorOpen();
+                if (isJumpStep)
+                {
+                    // door在不同zone之间切换时才开门，同时将玩家传送到对应区域出生点。
+                    if (currentStepZoneID != _step.sceneZoneTypeId)
+                    {
+                        if (_step.sceneZoneTypeId == 0)
+                        {
+                            TeleportPlayerTo(prepareZoneSpawnPoint);
+                        }
+                        else
+                        {
+                            TeleportPlayerTo(safeZoneSpawnPoint);
+                        }
+                    }
+                    else if (GameManager.Instance.Player.IsInLab && _step.sceneZoneTypeId == 1 ||
+                        !GameManager.Instance.Player.IsInLab && _step.sceneZoneTypeId == 0)
+                    {
+
+                        door.PlayDoorClose();
+
+
+                    }
+                }
+                else
+                {
+                    // door在不同zone之间切换时才开门，同时将玩家传送到对应区域出生点。
+                    if (currentStepZoneID != _step.sceneZoneTypeId)
+                    {
+                        door.PlayDoorOpen();
+                    }
+                    else
+                    {
+
+                        door.PlayDoorClose();
+                    }
+                }
             }
-            CurrentStep = _step;
+            
+                CurrentStep = _step;
             //设置当前步骤的zoneID，后续可以根据这个ID来判断玩家是否进入了新的区域
             currentStepZoneID = CurrentStep.sceneZoneTypeId;
             CurrentStep.OnStepStartEvent += OStepStart;
@@ -278,6 +330,26 @@ namespace Starscape.Simulation
             CurrentStep.OnStepStartEvent -= OStepStart;
             CurrentStep.OnStepEndEvent -= OnStepEnd;
             CurrentStep = null;
+        }
+
+        private void TeleportPlayerTo(Transform _spawnPoint)
+        {
+            if (_spawnPoint == null || GameManager.Instance == null || GameManager.Instance.Player == null)
+            {
+                return;
+            }
+
+            var playerTransform = GameManager.Instance.Player.transform;
+            var characterController = playerTransform.GetComponent<CharacterController>();
+            if (characterController != null && characterController.enabled)
+            {
+                characterController.enabled = false;
+                playerTransform.position = _spawnPoint.position;
+                characterController.enabled = true;
+                return;
+            }
+
+            playerTransform.position = _spawnPoint.position;
         }
 
         protected virtual GetNextStepResult GetNextStep(SceneStepBase _currentStep, out SceneStepBase _nextStep)
@@ -536,6 +608,7 @@ namespace Starscape.Simulation
         /// </summary>
         public void HideNotify(string _id)
         {
+            Debug.Log("hide0");
             if (string.IsNullOrEmpty(_id))
             {
                 return;
@@ -545,6 +618,7 @@ namespace Starscape.Simulation
             {
                 return;
             }
+           
             var data = m_notifyDataSet[index];
             if (data.NotifyType == NotifyData.Type.Warning)
             {
@@ -552,9 +626,10 @@ namespace Starscape.Simulation
             }
             else if (data.NotifyType == NotifyData.Type.Notify)
             {
+                Debug.Log("hide1");
                 if (m_notifyRuntimeIdByDataId.TryGetValue(_id, out var runtimeId))
                 {
-                    
+                   
                     GameManager.Instance.UIManager.HideNotify(runtimeId);
                     m_notifyRuntimeIdByDataId.Remove(_id);
                 }

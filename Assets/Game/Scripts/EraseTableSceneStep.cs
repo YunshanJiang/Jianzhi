@@ -22,15 +22,18 @@ namespace Game
         protected override void OnStepStart()
         {
             base.OnStepStart();
+            m_eraseRevealController.ResetMask();
             m_eraseRevealController.IsEraseable = true;
+
         }
 
         protected override void OnStepReset()
         {
             base.OnStepReset();
             //Run_m_onStepEnd();
-            StepEnd();
             m_eraseRevealController.ResetMask();
+            StepEnd();
+            
         }
 
         private void OnEraseCompleted(int _index, bool _isLast)

@@ -60,6 +60,7 @@ public class EraseRevealController : MonoBehaviour
     void Awake()
     {
         _sr = GetComponent<SpriteRenderer>();
+        Debug.Log("_sr found" + _sr);
         if (inputCamera == null) inputCamera = Camera.main;
 
         InitMaterialsAndMask();
@@ -136,7 +137,7 @@ public class EraseRevealController : MonoBehaviour
 
         _stageIndex = 0;
         SetupStageTextures(_stageIndex);
-
+        Debug.Log("reset table");
         EraseProgress = 0f;
         OnEraseProgressChanged?.Invoke(_stageIndex, EraseProgress);
     }

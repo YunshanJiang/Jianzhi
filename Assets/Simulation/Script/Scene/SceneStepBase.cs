@@ -124,11 +124,36 @@ namespace Starscape.Simulation
             OnStepEnd();
             m_onStepEnd?.Invoke();
             OnStepEndEvent?.Invoke(this);
+
             GameManager.Instance.SceneManager.RaiseOnStepEndEvent(this);
+           
 
             if (m_stepMessageId != 0)
             {
                 
+                GameManager.Instance.UIManager.HideNotify(m_stepMessageId);
+                m_stepMessageId = 0;
+            }
+        }
+
+        public void StepEndInJump()
+        {
+            IsRunning = false;
+            if (m_stepEndInactive)
+            {
+                foreach (var obj in m_stepStartActiveSet)
+                {
+                    obj.SetActive(false);
+                }
+            }
+            OnStepEnd();
+            OnStepEndEvent?.Invoke(this);
+            GameManager.Instance.SceneManager.RaiseOnStepEndEvent(this);
+           
+
+            if (m_stepMessageId != 0)
+            {
+
                 GameManager.Instance.UIManager.HideNotify(m_stepMessageId);
                 m_stepMessageId = 0;
             }

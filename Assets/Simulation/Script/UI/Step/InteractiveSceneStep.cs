@@ -35,7 +35,11 @@ namespace Starscape.Simulation
         {
             
             base.OnStepEnd();
-            m_interactive.gameObject.SetActive(false);
+            if(m_interactive.gameObject!= null)
+            {
+                m_interactive.gameObject.SetActive(false);
+            }
+           
             m_interactive.OnInteractEvent -= OnInteract;
         }
 
@@ -50,8 +54,10 @@ namespace Starscape.Simulation
         protected override void OnStepReset()
         {
             base.OnStepReset();
-            m_interactive.gameObject.SetActive(false);
-            m_interactive.OnInteractEvent -= OnInteract;
+            StepEndInJump();
+           // m_interactive.gameObject.SetActive(false);
+           // m_interactive.OnInteractEvent -= OnInteract;
+
         }
         public void ShakeStepMessage()
         {

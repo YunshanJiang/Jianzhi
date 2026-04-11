@@ -1,22 +1,25 @@
 ﻿using Sirenix.OdinInspector;
+using Starscape.Common;
 using UnityEngine;
 using UnityEngine.Events;
 
 namespace Starscape.Common
 {
-    /// <summary>
-    /// 物理碰撞交互组件
-    /// </summary>
-    public class PhysicsColliderInteractive : InteractiveBase
+    public class DoorPhysicsColliderInteractive : InteractiveBase
     {
         [TitleGroup("PhysicsCollider")]
-        [SerializeField][ValueDropdown("@Starscape.Common.Utils.GetAllTags()")]
+        [SerializeField]
+        [ValueDropdown("@Starscape.Common.Utils.GetAllTags()")]
         private string m_targetTag;
-
-
-        /**
+        [TitleGroup("事件")]
+        [SerializeField]
+        private UnityEvent m_doorClose, m_doorOpen;
+        [TitleGroup("Door")]
+        [SerializeField]
+        private bool m_isDoorOpen;
         protected override void OnInteract()
         {
+            /*
             m_isDoorOpen = !m_isDoorOpen;
             // 按需求映射：门开时触发Close事件，门关时触发Open事件。
             if (m_isDoorOpen)
@@ -28,9 +31,28 @@ namespace Starscape.Common
                 m_doorOpen?.Invoke();
             }
             //SetPromptVisible(true);
+            */
         }
-        **/
-   
+        public void PlayDoorOpen()
+        {
+            if (!m_isDoorOpen)
+            {
+                m_doorOpen?.Invoke();
+            }
+            m_isDoorOpen = true;
+
+        }
+        public void PlayDoorClose()
+        {
+            if (m_isDoorOpen)
+            {
+               
+                m_doorClose?.Invoke();
+               
+            }
+            m_isDoorOpen = false;
+
+        }
         ///------------------------------------- 3D部分 -------------------------------------///
         private void OnTriggerEnter(Collider _other) => ColliderEnter(_other);
         private void OnTriggerExit(Collider _other) => ColliderExit(_other);
