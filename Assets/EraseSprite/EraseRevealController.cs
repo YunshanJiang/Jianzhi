@@ -93,10 +93,11 @@ public class EraseRevealController : MonoBehaviour
         if (Input.GetMouseButton(0))
         {
             Vector3 sp = Input.mousePosition;
-
+            
             if (TryGetPointerHit(sp, out var hitPoint) &&
                 TryWorldToSpriteUV(hitPoint, out var uv, out var uvRadius))
             {
+                
                 Stamp(uv, uvRadius);
                 UpdateProgress(false);
             }
@@ -198,7 +199,6 @@ public class EraseRevealController : MonoBehaviour
     {
         _brushMat.SetVector("_BrushUV_Size", new Vector4(uv.x, uv.y, uvRadius.x, uvRadius.y));
         _brushMat.SetFloat("_BrushHardness", Mathf.Clamp01(brushHardness));
-
         var tmp = RenderTexture.GetTemporary(_maskRT.descriptor);
         Graphics.Blit(_maskRT, tmp, _brushMat, 0);
         Graphics.Blit(tmp, _maskRT);
@@ -291,12 +291,12 @@ public class EraseRevealController : MonoBehaviour
 
         float pMask = ComputeMaskCoverage();
         float pVisual = Mathf.Clamp01(pMask + (_isFadingCompletion ? _completionFade01 : 0f));
-
+        Debug.Log(pVisual);
         if (force || Mathf.Abs(pVisual - EraseProgress) >= 0.002f)
         {
             EraseProgress = pVisual;
             OnEraseProgressChanged?.Invoke(_stageIndex, EraseProgress);
-
+            
             // 阶段完成触发
             if (!_isFadingCompletion && EraseProgress >= eraseCompleteThreshold)
             {
@@ -412,13 +412,11 @@ public class EraseRevealController : MonoBehaviour
         {
             return;
         }
-
         var currentColor = _sr.color;
         if (currentColor == _cachedRendererColor)
         {
             return;
         }
-
         _cachedRendererColor = currentColor;
         _revealMat.SetColor("_Color", currentColor);
         _revealMat.SetFloat("_RendererAlpha", currentColor.a);
