@@ -399,17 +399,12 @@ MonoBehaviour:
     Active: 0
   - Target: {fileID: 1823762098}
     Active: 0
-  - Target: {fileID: 2007977639}
-    Active: 0
   m_stepStartActiveSet:
   - {fileID: 1266602418}
-  - {fileID: 2007977639}
   m_stepEndActiveSet:
   - Target: {fileID: 491017233}
     Active: 0
   - Target: {fileID: 1823762098}
-    Active: 0
-  - Target: {fileID: 2007977639}
     Active: 0
   m_stepEndInactive: 1
   m_onStepStart:
@@ -472,8 +467,6 @@ MonoBehaviour:
   m_compositeType: 0
   m_completeCondition: 0
   m_sceneStepSet:
-  - {fileID: 1129673781}
-  - {fileID: 1308803378}
   - {fileID: 1801322270}
   - {fileID: 605265116}
   - {fileID: 1461065673}
